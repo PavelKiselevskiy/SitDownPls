@@ -1,0 +1,1694 @@
+@import "variables.scss";
+
+
+@media (max-width: 1300px) {
+  .footer {
+    &__right-panel {
+      gap: calc(48px + (92 - 48) * ((100vw - 1024px) / (1300 - 1024)));
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(9, 1fr)
+  }
+
+  .container {
+    padding: 0 36px;
+  }
+
+  .header {
+    background-position-y: 58px;
+
+    &__container {
+      grid-template-rows: 58px 50px 92px 60px;
+    }
+
+    &__phone-container {
+      grid-column: 1 / -1;
+    }
+
+    &__additional-nav {
+      grid-column: 1 / 8;
+      grid-row: 2;
+      justify-self: start;
+    }
+
+    &__additaonal-nav-item:not(:last-child) {
+      margin-right: calc(35px + (64 - 35) * (100vw - 768px) / (1024 - 768));
+    }
+
+    &__logo {
+      grid-column: 1 / 3;
+      grid-row: 3;
+    }
+
+    &__main-nav {
+      grid-column: 3 / -1;
+      grid-row: 3;
+      justify-self: start;
+      padding-top: 0;
+      padding-left: 40px;
+    }
+
+    &__main-nav-item:not(:last-child) {
+      margin-right: calc(32px + (41 - 32) * (100vw - 768px) / (1024 - 768));
+    }
+
+    &__form-container {
+      grid-column: 1 / 8;
+      grid-row: 4;
+    }
+
+    &__personal {
+      grid-column: 8 / -1;
+      grid-row: 2;
+    }
+
+    &__form-btn {
+      right: 40px;
+    }
+
+    &__form-input {
+      width: 91%;
+      border-radius: 10px;
+    }
+
+    &__crumbs {
+      grid-row: 5 / 5;
+    }
+
+}
+
+  .hero {
+    background-image: url('@img/main-bannr-1024.png');
+  }
+
+  .offers {
+      &__card-area {
+        grid-template-columns: repeat(3, 3fr);
+      }
+
+      &__card-pic {
+        margin-bottom: 10px;
+      }
+
+      &__card-2 &__card-pic {
+        margin-bottom: auto;
+      }
+
+      &__card-title {
+        margin-bottom: 20px;
+      }
+
+      &__nameplate {
+        justify-content: start;
+      }
+
+      &__nameplate-text {
+        min-width: 54px;
+        padding-left: 20px;
+      }
+
+  }
+
+  .big-card {
+    padding-top: 112px;
+  }
+  .big-card::after {
+    display: none;
+  }
+
+  .rating {
+      &__card-area {
+        grid-template-columns: repeat(3, 3fr);
+      }
+
+      &__card-7, &__card-8 {
+        display: none;
+      }
+  }
+
+  .banner {
+    background-image: url('@img/banner-oxford-1024.png');
+  }
+
+  .categories {
+    margin-bottom: 72px;
+    &__card-area {
+      grid-template-areas:
+      "c-card-1 c-card-1 c-card-1 c-card-1 c-card-1 c-card-1 c-card-3 c-card-3 c-card-3"
+      "c-card-4 c-card-4 c-card-4 c-card-2 c-card-2 c-card-2  c-card-5 c-card-5 c-card-5";
+      grid-template-rows: minmax(511px, auto) minmax(511px, auto);
+    }
+
+    &__card-title {
+      justify-self: flex-start;
+      margin-bottom: 40px;
+    }
+
+    &__card-img {
+      margin-bottom: 0;
+    }
+
+    &__card-pic {
+      margin-bottom: auto;
+    }
+
+  }
+
+  .useful {
+
+    &__title {
+      margin-bottom: 24px;
+    }
+
+    &__card-area {
+      grid-template-columns: 3fr 3fr 3fr;
+      grid-template-rows: minmax(456px, auto);
+    }
+
+    &__card-descr {
+      max-width: 236px;
+      font-size: 16px;
+    }
+    &__card-3 {
+      display: flex;
+    }
+  }
+
+  .feedback {
+
+    &__container {
+      grid-template-columns: 4fr 5fr;
+    }
+
+    &__descr {
+      max-width: 405px;
+      margin-bottom: 13px;
+    }
+
+    &__right-panel {
+      padding-top: 81px;
+    }
+
+  }
+
+  .footer {
+    &__container {
+      padding: 24px 36px;
+    }
+
+    &__left-panel {
+      grid-column: 1 / 3;
+    }
+
+    &__right-panel {
+      grid-column: 3 / -1;
+      justify-self: start;
+      padding-left: 8px;
+      gap: calc(39px + (75 - 39) * (100vw - 768px) / (1024 - 768));
+    }
+
+    &__catalog {
+      padding-top: 3px;
+      padding-left: 0;
+    }
+
+    &__catalog-container {
+      padding-bottom: 10px;
+    }
+
+  }
+
+  .title-mob-catalog {
+    grid-row: 1 / 1;
+    display: flex;
+  }
+
+  .title-desk-catalog {
+    display: none;
+  }
+
+  .catalog-cont {
+    grid-template-columns: repeat(12, 1fr);
+    margin-bottom: 59px;
+  }
+
+  .catalog {
+    grid-column: 1 / -1;
+    grid-row: 3 / 3;
+
+    &__card-area {
+      grid-template-columns: repeat(3, 3fr);
+    }
+
+    &__card-top-panel {
+      min-height: 165px;
+      margin-bottom: 14px;
+    }
+  }
+
+  .filter-block {
+    margin-bottom: 22px;
+    grid-column: 1 / -1;
+    grid-row: 2 / 2;
+
+    &__area {
+      flex-direction: row;
+      column-gap: 46px;
+    }
+
+    &__panel-title {
+      margin-bottom: 8px;
+    }
+
+    &__price-panel {
+      padding-left: 38px;
+    }
+
+    &__title {
+      display: none;
+    }
+
+    &__card {
+      display: none;
+    }
+
+    &__price-title {
+      margin-bottom: 5px;
+    }
+
+  }
+
+
+  // карточка товара
+  .product-card {
+    padding: 0;
+    margin-bottom: 69px;
+    &__area {
+      grid-template-columns: 5fr 4fr;
+      column-gap: 24px;
+      row-gap: 81px;
+    }
+
+    &__img-container {
+      padding-top: 22px;
+    }
+
+    &__main-contact {
+      padding-left: 7px;
+    }
+
+    &__nameplate {
+      top: -1px;
+      left: 8px;
+    }
+
+    &__characteristics {
+      padding-left: 7px;
+    }
+
+    &__characteristics-list {
+      min-width: 46.5%;
+    }
+
+    &__construction-descr {
+      margin-bottom: 78px;
+    }
+  }
+
+  .similar-products {
+
+    &__card-area {
+      grid-template-columns: repeat(3, 3fr);
+    }
+
+    &__card-4 {
+      display: none;
+    }
+  }
+
+
+}
+
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .container {
+    padding: 0 72px;
+  }
+
+  .header {
+
+    &__container {
+      grid-template-rows: 58px 50px 92px 50px 60px;
+    }
+
+    &__additional-nav {
+      grid-column: 1 / -1;
+      grid-row: 2 / 2;
+    }
+
+    &__logo {
+      grid-column: 1 / 3;
+      grid-row: 3 / 3;
+    }
+
+    &__main-nav {
+      grid-column: 1 / -1;
+      grid-row: 4 / 4;
+      padding: 0;
+    }
+
+    &__form-container {
+      grid-column: 1 / -1;
+      grid-row: 5 / 5;
+    }
+
+    &__form {
+      max-width: 100%;
+    }
+
+    &__form-input {
+      width: 93.3%;
+    }
+
+    &__personal {
+      grid-column: 5 / -1;
+      grid-row: 3 / 3;
+    }
+
+    &__crumbs {
+      grid-row: 6/6;
+    }
+
+  }
+
+  .offers {
+    &__card-area {
+      grid-template-columns: repeat(2, 2fr);
+    }
+    &__card-1 &__card-content {
+      align-self: start;
+    }
+
+    &__card-3 {
+      display: none;
+    }
+
+  }
+
+  .rating {
+    &__card-area {
+      grid-template-columns: repeat(2, 3fr);
+    }
+  }
+
+  .categories {
+    &__card-area {
+      grid-template-areas:
+    "c-card-1 c-card-1 c-card-1 c-card-1 c-card-1 c-card-1"
+    "c-card-4 c-card-4 c-card-4 c-card-2 c-card-2 c-card-2"
+    "c-card-5 c-card-5 c-card-5 c-card-3 c-card-3 c-card-3";
+    grid-template-rows: minmax(511px, auto) minmax(511px, auto) minmax(511px, auto);
+    }
+  }
+
+  .useful {
+
+    &__card-area {
+      grid-template-columns: 3fr 3fr;
+    }
+
+    &__card-3 {
+      display: none;
+    }
+
+    &__card-img {
+      margin-bottom: 10px;
+    }
+
+    &__card-descr {
+      max-width: 300px;
+    }
+  }
+
+  .feedback {
+    &__container {
+      grid-template-columns: 4fr 2fr;
+    }
+  }
+
+  .footer {
+
+    &__container {
+      padding: 24px 72px;
+    }
+
+      &__left-panel {
+        grid-column: 1 / -1;
+        grid-row: 1 / 1;
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        margin-bottom: 24px;
+      }
+
+      &__logo-link {
+        margin-bottom: 0;
+        grid-column: 1 / 3;
+      }
+
+      &__social-link-container {
+        grid-column: 8 / -1;
+        width: 100%;
+        justify-content: center;
+      }
+
+      &__right-panel {
+        grid-column: 1 / -1;
+        grid-row: 2 / 2;
+        gap: calc(39px + (115 - 39) * ((100vw - 768px) / (992 - 768)));
+      }
+
+  }
+
+  .catalog {
+    &__card-area {
+      grid-template-columns: repeat(3, 3fr);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .header {
+    margin-bottom: 37px;
+
+    &__additional-nav {
+      display: flex;
+      max-width: 100%;
+      padding-top: 3px;
+
+    }
+
+    &__additional-nav-list {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      overflow-x: auto;
+      white-space: nowrap;
+      min-height: 40px;
+    }
+
+    &__logo {
+      width: 187px;
+      height: 27px;
+      padding-top: 8px;
+    }
+
+    &__main-nav-link {
+      font-size: 14px;
+    }
+
+    &__main-nav {
+      overflow-y: hidden;
+      align-self: flex-start;
+      max-width: 100%;
+
+    }
+
+    &__main-nav-list {
+     flex-wrap: nowrap;
+     overflow-y: auto;
+     white-space: nowrap;
+      padding-top: 1px;
+      min-height: 40px;
+    }
+
+    &__main-nav-item {
+      display: flex;
+    }
+
+    &__main-nav-item:not(:last-child) {
+      margin-right: calc(29px + (40 - 30) * ((100vw - 576px) / (768 - 576)));
+    }
+
+    &__personal {
+      padding-top: 5px;
+    }
+
+    &__personal-area {
+      margin-right: 25px;
+    }
+
+    &__form {
+      padding-top: 9px;
+    }
+
+    &__form-input {
+      width: 92.3%;
+      padding-left: 54px;
+    }
+
+    &__form-btn {
+      top: 24px;
+      right: 28px;
+    }
+
+    &__form-input-search {
+      top: 30px;
+      left: 28px;
+    }
+
+    &__crumbs-list {
+      min-height: 45px;
+      flex-wrap: wrap;
+  }
+
+}
+
+.catalog-header {
+  margin-bottom: 32px;
+}
+
+  .hero {
+    background-image: url('@img/main-banner-768.png');
+  }
+
+  .big-card {
+    padding-left: 21px;
+    padding-right: 21px;
+
+    &__content {
+      padding-left: 9px;
+    }
+  }
+
+  .big-card .offers__card-title {
+    margin-bottom: 24px;
+  }
+
+  .big-card .offers__nameplate-text {
+    padding-left: 17px;
+  }
+
+  .big-card .offers__card-btn {
+    margin-left: 9px;
+  }
+
+  .card-main {
+    &__title {
+      margin-bottom: 24px;
+    }
+  }
+
+  .rating {
+    &__card-btn {
+      padding: 16px 35px;
+    }
+  }
+
+  .banner {
+    background-image: url('@img/banner-oxford-768.png');
+
+    &__container {
+      padding-left: 36px;
+    }
+
+    &__title {
+      padding-top: 6px;
+    }
+  }
+
+  .categories {
+    margin-bottom: 70px;
+    &__card-area {
+      grid-template-areas:
+    "c-card-1 c-card-1 c-card-1 c-card-1 c-card-1 c-card-1"
+    "c-card-3 c-card-3 c-card-3 c-card-2 c-card-2 c-card-2"
+    "c-card-4 c-card-4 c-card-4 c-card-5 c-card-5 c-card-5";
+    gap: 32px;
+    }
+
+    &__card-list {
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+  }
+
+  .useful {
+    margin-bottom: 68px;
+    &__title {
+      margin-bottom: 22px;
+    }
+
+    &__card-img {
+      margin-bottom: 27px;
+    }
+
+    &__card-descr {
+      max-width: 236px;
+    }
+  }
+
+  .feedback {
+
+    &__container {
+      gap: 32px;
+    }
+    &__title {
+      margin-bottom: 7px;
+    }
+
+    &__right-panel {
+      padding-top: 0;
+    }
+
+    &__right-panel-pic {
+      padding-left: 0;
+    }
+  }
+
+  .footer {
+    &__left-panel {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    &__social-link-container {
+      grid-column: 5 / -1;
+      padding-left: 14px;
+    }
+
+    &__right-panel {
+      padding: 0;
+    }
+
+    &__catalog {
+      padding-top: 0px;
+      padding-left: 0;
+    }
+  }
+
+  .catalog {
+
+    &__card-area {
+      grid-template-columns: repeat(2, 3fr);
+    }
+
+    &__card-4 {
+      grid-column: 1 / 2;
+      grid-row: 2 /2;
+    }
+
+    &__card-top-panel {
+      margin-bottom: 12px;
+    }
+
+    &__card-7, &__card-8, &__card-9 {
+      display: none;
+    }
+  }
+
+  .filter-block {
+    &__area {
+      flex-wrap: wrap;
+    }
+  }
+
+  .product-card {
+    margin-bottom: 38px;
+
+    &__img-container {
+      padding-top: 0;
+    }
+
+    &__area {
+    grid-template-columns: repeat(1, 6fr);
+    row-gap: 32px;
+    }
+
+    &__main-contact {
+      padding-top: 54px;
+      padding-left: 1px;
+    }
+
+    &__nameplate {
+      left: 1px;
+      top: 29px;
+    }
+
+    &__main-price {
+      margin-bottom: 19px;
+    }
+
+    &__construction-container {
+      padding-top: 51px;
+    }
+
+    &__construction-descr {
+      max-width: 515px;
+      margin-bottom: 31px;
+      line-height: 189%;
+    }
+
+    &__characteristics {
+      padding-top: 1px;
+      padding-left: 1px;
+    }
+
+    &__characteristics-list {
+      min-width: 65.4%;
+    }
+  }
+
+  .similar-products {
+    &__card-area {
+      grid-template-columns: repeat(2, 3fr);
+    }
+
+    &__card-3 {
+      display: none;
+    }
+  }
+
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .container {
+    padding: 0 12px;
+  }
+
+  .second-title {
+    font-size: 24px;
+  }
+
+  .card-main__btn {
+    font-size: 16px;
+  }
+
+  .card-main__title {
+    font-size: 24px;
+  }
+
+  .header {
+    margin-bottom: 32px;
+    background-position-y: 0px;
+
+    &__container {
+      grid-template-rows: 50px 66px 52px 60px;
+    }
+
+    &__logo {
+      grid-column: 1 / -1;
+      grid-row: 1 / 1;
+      justify-self: center;
+    }
+
+    &__additional-nav {
+      display: none;
+    }
+
+    &__phone-container {
+      grid-column: 1 / 4;
+      grid-row: 2 / 2;
+    }
+
+    &__personal {
+      grid-column: 4 / -1;
+      grid-row: 2 / 2;
+    }
+
+    &__main-nav {
+      grid-column: 1/-1;
+      grid-row: 3/3;
+    }
+
+    &__form-container {
+      grid-column: 1/-1;
+      grid-row: 4/4;
+    }
+
+    &__form-input {
+      width: 86.3%;
+    }
+
+
+
+  }
+
+  .hero {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__title {
+      max-width: 204px;
+      font-size: 20px;
+    }
+
+    &__container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-height: 412px;
+    }
+
+    &__btn {
+      position: absolute;
+      bottom: 0px;
+      align-self: center;
+      min-width: 296px;
+      max-width: 296px;
+    }
+
+  }
+
+  .offers {
+    &__title {
+      font-size: 24px;
+    }
+
+    &__card-area {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 24px;
+    }
+  }
+
+  .rating {
+    &__card-area {
+      grid-template-columns: repeat(2, 3fr);
+      gap: 16px;
+    }
+
+      &__card {
+        padding: 16px 7px;
+      }
+
+
+    &__card-btn {
+      margin-left: 0;
+      padding: 19px 23px;
+      font-size: 16px;
+    }
+  }
+
+  .banner {
+    background-size: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      min-height: 412px;
+    }
+
+    &__title, &__descr {
+      font-size: 24px;
+    }
+
+    &__btn {
+      position: absolute;
+      bottom: 0px;
+      align-self: center;
+      min-width: 296px;
+      max-width: 296px;
+    }
+
+
+  }
+
+  .categories {
+    &__card-area {
+      row-gap: 24px;
+      column-gap: 16px;
+    }
+  }
+
+  .useful {
+    &__card-area {
+      grid-template-columns: repeat(1, minmax(296px, 296px));
+      justify-content: center;
+    }
+
+    &__card {
+      align-items: center;
+      max-width: 320px;
+      min-height: 456px;
+    }
+
+    &__card picture {
+      display: flex;
+      justify-content: center;
+    }
+
+
+
+    &__card-btn {
+      align-self: flex-start;
+    }
+  }
+
+  .feedback {
+    &__container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__right-panel {
+      display: none;
+    }
+  }
+
+  .footer {
+    &__bg {
+      padding-top: 24px;
+    }
+
+    &__left-panel {
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: center;
+      align-items: center;
+      row-gap: 24px;
+    }
+
+    &__logo-link {
+      justify-self: center;
+      grid-column: 1 / -1;
+    }
+
+    &__social-link-container {
+      grid-row: 2/2;
+      grid-column: 1/-1;
+      justify-self: center;
+    }
+
+    &__right-panel {
+      grid-template-columns: repeat(2, 3fr);
+      row-gap: 24px;
+    }
+
+    &__right-panel-list-container {
+      justify-self: center;
+    }
+  }
+
+  .catalog {
+    &__card-area {
+      grid-template-columns: repeat(2, 3fr);
+      gap: 16px;
+    }
+
+    &__card-title {
+      font-size: 16px;
+    }
+
+    &__card-4 {
+      grid-row: 2 / 2;
+      grid-column: -1 / 2;
+    }
+  }
+
+  .product-card {
+    &__area {
+      grid-template-rows: repeat(4, minmax(116px, auto));
+      row-gap: 16px;
+    }
+
+    &__main-title {
+      font-size: 16px;
+    }
+
+    &__main-contact {
+      padding-top: 23px;
+    }
+
+    &__nameplate {
+      top: 3px;
+    }
+
+    &__main-price {
+      font-size: 24px;
+    }
+
+    &__main-btn {
+      align-self: center;
+    }
+
+    &__link {
+      align-self: center;
+      margin: 0;
+    }
+
+    &__construction-container {
+      padding-top: 10px;
+    }
+  }
+
+  .similar-products {
+    &__card-title {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    &__card-content {
+      margin-left: 0;
+    }
+
+    &__card-btn {
+      margin: 0;
+      align-self: center;
+    }
+  }
+
+}
+
+@media (max-width: 390px) {
+  .big-card__content {
+    padding-top: 44px;
+  }
+
+  .header {
+    &__logo {
+      padding-top: 0;
+    }
+
+    &__phone-container {
+      padding-top: 16px;
+    }
+
+    &__personal {
+      padding-top: 16px;
+    }
+
+    &__personal-area {
+      margin-right: 29px;
+    }
+
+    &__main-nav-link {
+      padding-top: 18px;
+    }
+
+    &__main-nav-item:not(:last-child) {
+      margin-right: 31px;
+    }
+
+    &__form {
+      padding-top: 3px;
+    }
+
+    &__form-btn {
+      top: 16px;
+      right: 32px;
+    }
+
+    &__form-input {
+      width: 81.3%;
+      padding-left: 59px;
+    }
+
+
+    &__form-input-search {
+      top: 22px;
+      left: 32px;
+    }
+
+    &__crumbs-list {
+      display: none;
+    }
+  }
+
+  .catalog-header {
+    margin-bottom: 26px;
+  }
+
+  .hero {
+    background-image: url('/img/main-banner-390.png');
+    margin-bottom: 38px;
+
+    &__title {
+      max-width: 220px;
+      margin-left: 19px;
+      letter-spacing: .7px;
+    }
+
+    &__container {
+      min-height: 272px;
+    }
+  }
+
+  .offers {
+    margin-bottom: 68px;
+
+    &__title {
+      line-height: 25px;
+      margin-bottom: 26px;
+    }
+
+    &__card-pic {
+      margin-bottom: 13px;
+    }
+
+    &__card-title {
+      margin-bottom: 22px;
+    }
+
+    &__card-btn {
+      padding: 16.5px 35px;
+    }
+
+    &__card-3, &__card-4, &__card-5, &__card-6 {
+      display: flex;
+    }
+
+    &__card-4 &__card-pic {
+      padding-top: 42px;
+    }
+
+    &__card-5 &__card-pic {
+      padding-top: 90px;
+      margin-bottom: 52px;
+    }
+
+    &__card-5 {
+      padding: 30px 16px;
+    }
+
+    &__card-5 &__card-btn {
+      margin-left: 14px;
+    }
+
+    &__card-6 &__card-pic {
+      padding-top: 34px;
+    }
+
+    &__card-6 &__card-price {
+      margin-bottom: 21px;
+    }
+
+
+
+
+  }
+
+  .rating {
+
+    &__title {
+      margin-bottom: 24px;
+    }
+
+    &__card-title {
+      margin-bottom: 18px;
+    }
+
+    &__card-area {
+      grid-template-rows: minmax(200px, auto);
+      row-gap: 15px;
+    }
+
+    &__card-content {
+      padding-left: 9px;
+    }
+
+    &__card-prices {
+      margin-bottom: 16px;
+    }
+
+    &__card-btn {
+      margin-left: 10px;
+      padding: 9.4px 24px;
+    }
+
+    &__nameplate {
+      left: 15px;
+      top: 15px;
+    }
+
+    &__nameplate-text {
+      font-size: 12px;
+    }
+
+    &__card-title {
+      font-size: 16px;
+    }
+
+    &__card-top-panel {
+      min-height: 74px;
+    }
+
+    &__card-2 &__card-top-panel {
+      min-height: 76px;
+    }
+
+    &__card-3 {
+      padding-bottom: 9px;
+
+    }
+
+    &__card-3 &__card-top-panel {
+      min-height: 77px;
+      margin-bottom: 13px;
+    }
+
+    &__card-3 &__card-content {
+      margin-bottom: 0px;
+    }
+
+    &__card-4 &__card-top-panel {
+      min-height: 82px;
+      margin-bottom: 8px;
+    }
+
+    &__card-4 &__card-top-panel {
+      min-height: 82px;
+    }
+
+    &__card-5 &__card-top-panel {
+      min-height: 80px;
+      margin-bottom:11px;
+    }
+
+    &__card-6 &__card-top-panel {
+      min-height: 80px;
+      margin-bottom:11px;
+    }
+
+  }
+
+  .banner {
+    padding-top: 26px;
+    background-image: url('/img/banner-oxford-390.png');
+    margin-bottom: 14px;
+
+    &__container {
+      min-height: 276px;
+    }
+
+    &__descr {
+      font-size: 16px;
+      max-width: 187px;
+    }
+  }
+
+  .categories {
+    margin-bottom: 67px;
+
+    &__title {
+      margin-bottom: 24px;
+    }
+
+    &__card-title {
+     display: none;
+    }
+
+    &__card-link-title {
+      display: block;
+      margin-bottom: 0;
+    }
+
+    &__card-link-title {
+      font-size: 16px;
+      padding-left: 15px;
+    }
+
+    &__card-link-title-first {
+      font-size: 24px;
+      padding-left: 30px;
+    }
+
+    &__card-link-mob {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    &__card-link-mob svg {
+      margin-left: 5px;
+      padding-top: 5px;
+      width: 22px;
+      height: 22px;
+    }
+
+    .categories__card-link-mob svg {
+      margin-left: 6px;
+      padding-top: 2px;
+      width: 22px;
+      height: 22px;
+    }
+
+    &__card-area {
+      grid-template-rows: minmax(296px, auto) minmax(140px, auto) minmax(140px, auto);
+      row-gap: 32px;
+    }
+
+    &__card:first-child {
+      padding-top: 27px;
+      padding-bottom: 12px;
+    }
+    &__card {
+      padding-top: 10px;
+    }
+
+    &__card-list {
+      padding-left: 15px;
+      margin-bottom: 8px;
+      gap: 0px;
+      column-gap: 30px;
+    }
+
+    &__card-list-first {
+      padding-left: 30px;
+      margin-bottom: 20px;
+      column-gap: 21px;
+    }
+
+    &__card-list-first &__card-filter-link {
+     font-size: 14px;
+    }
+
+    &__card-filters-item {
+      max-height: 14px;
+    }
+
+    &__card-filter-link {
+      font-size: 10px;
+      line-height: normal;
+    }
+
+    &__card {
+      padding-bottom: 13px;
+    }
+
+    &__card-link {
+      display: none;
+    }
+
+    &__card-4 &__card-list {
+      margin-bottom: 9px;
+      column-gap: 56px;
+    }
+
+    &__card-4 &__card-link-title {
+      max-width: 76px;
+    }
+
+    &__card-4 &__card-link-mob svg {
+      padding-top: 18px;
+    }
+
+  }
+
+  .useful {
+    margin-bottom: 67px;
+    &__title {
+      margin-bottom: 25px;
+    }
+
+    &__card-area {
+      row-gap: 23px;
+    }
+
+    &__card {
+      min-height: 426px;
+    }
+
+    &__card-img {
+      margin-bottom: 30px;
+    }
+
+    &__card-descr {
+      padding-left: 11px;
+    }
+
+    &__card-3, &__card-4, &__card-5 {
+      display: flex;
+    }
+
+  }
+
+  .feedback {
+    &__form-lab {
+      font-size: 12px;
+    }
+  }
+
+  .footer {
+
+    &__left-panel {
+      row-gap: 21px;
+      margin-bottom: 21px;
+    }
+    &__social-link-container {
+      padding-left: 1px;
+    }
+
+    &__right-panel-list-container {
+      justify-self: start;
+    }
+
+    &__right-panel-list-container:nth-child(2n) {
+      padding-left: 10px;
+    }
+
+    &__catalog-container {
+      padding-bottom: 22px;
+    }
+
+  }
+
+  .filter-block {
+    margin-bottom: 31px;
+    &__area {
+      column-gap: 30px;
+      row-gap: 18px;
+    }
+
+    &__price-panel {
+      padding-left: 0;
+    }
+  }
+
+  .catalog {
+    &__card-area {
+      grid-template-rows: minmax(200px, auto);
+    }
+
+    &__card-title {
+      margin-bottom: 19px;
+    }
+
+    &__card-prices {
+      margin-bottom: 15px;
+    }
+
+    &__card {
+      padding: 16px 11px;
+      padding-top: 10px;
+    }
+
+    &__nameplate {
+      top: 13px;
+      left: 17px;
+    }
+
+    &__nameplate svg {
+      width: 13px;
+      height: 12px;
+    }
+
+    &__nameplate-text {
+      font-size: 12px;
+    }
+
+    &__card-content {
+      padding-left: 5px;
+    }
+
+    &__card-btn {
+      margin-left: 5px;
+      padding: 9px 24px;
+    }
+
+    &__card-top-panel {
+      min-height: 80px;
+      margin-bottom: 16px;
+    }
+
+    &__card-3 &__card-top-panel {
+      min-height: 82px;
+    }
+    &__card-4 &__card-top-panel {
+      min-height: 89px;
+      margin-bottom: 7px;
+    }
+
+    &__card-5 &__card-top-panel {
+      min-height: 84px;
+      margin-bottom: 12px;
+    }
+
+    &__card-6 &__card-top-panel {
+      min-height: 84px;
+      margin-bottom: 12px;
+    }
+  }
+
+  .catalog-cont {
+    margin-bottom: 61px;
+  }
+
+  // карточка товара
+
+  .card-header {
+    margin-bottom: 24px;
+  }
+
+  .product-card {
+    margin-bottom: 93px;
+    &__img-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__area {
+      row-gap: 0;
+    }
+
+    &__main-contact {
+      padding-top: 22px;
+      padding-left: 0;
+    }
+
+    &__main-title {
+      margin-bottom: 7px;
+    }
+
+    &__main-descr {
+      max-width: 240px;
+      margin-bottom: 15px;
+      line-height: 109%;
+    }
+
+    &__main-price {
+      margin-bottom: 16px;
+    }
+
+    &__main-btn {
+      width: 100%;
+    }
+
+    &__nameplate {
+      top: -3px;
+      left: 0;
+    }
+
+    &__nameplate-text {
+      font-size: 16px;
+    }
+
+    &__construction-container {
+      padding-top: 30px;
+    }
+
+    &__construction-title {
+      font-size: 16px;
+    }
+
+    &__construction-descr {
+      max-width: 287px;
+      line-height: 186%;
+    }
+
+    &__characteristics {
+      position: relative;
+      padding-top: 30px;
+    }
+
+    &__characteristics-container {
+      font-size: 10px;
+    }
+
+    &__characteristics-list-meaning {
+      position: absolute;
+      top: 44px;
+    }
+
+    &__characteristics-list {
+      width: 100%;
+    }
+
+    &__characteristics-item:not(:last-child) {
+      margin-bottom: 29.4px;
+    }
+
+    &__characteristics-list-item-meaning:not(:last-child) {
+      margin-bottom: 25px;
+    }
+
+    &__characteristics-span {
+      display: none;
+    }
+
+  }
+
+  .similar-products {
+    &__card-area {
+      column-gap: 16px;
+    }
+
+    &__card-btn {
+      padding: 9px 24px;
+    }
+
+    &__card {
+      padding-top: 37px;
+      padding-bottom: 14px;
+    }
+
+    &__card-top-panel {
+      min-height: 63px;
+    }
+
+    &__nameplate {
+      top: 18px;
+      left: 16px;
+    }
+
+    &__nameplate svg {
+      width: 13px;
+      height: 12px;
+    }
+
+    &__card-pic {
+      margin-bottom: 5px;
+    }
+
+    &__card-content {
+      margin-left: 4px;
+      margin-bottom: 16px;
+    }
+
+    &__card-1 &__card-top-panel {
+      margin-bottom: 8px;
+    }
+
+    &__card-title {
+      margin-bottom: 18px;
+    }
+
+    &__card-prices {
+      margin-bottom: 0;
+    }
+  }
+
+}

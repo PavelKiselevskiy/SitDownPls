@@ -1,0 +1,1663 @@
+@import "normalize.scss";
+@import "variables.scss";
+@import '../../node_modules/swiper/swiper.scss';
+@import "_fonts.scss";
+@import "grid.scss";
+
+// общие
+
+
+img {
+  @include reset-style;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+picture {
+  display: block;
+  width: 100%;
+  height: fit-content;
+}
+ul, a  {
+  @include reset-style;
+}
+
+.second-title {
+  margin: 0;
+  margin-bottom: 26px;
+  max-width: 440px;
+  font-size: $second-title-text-sz;
+  font-style: normal;
+  font-weight: 400;
+}
+
+// кнопки и их состояния
+
+.primary-btn {
+  @include reset-style;
+  color: $white-text-color;
+  background-color: $primary;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.primary-btn:focus {
+  background-color: $focus-color;
+  outline:  2px solid $active-color;
+  transition: background-color .3s ease;
+}
+
+.primary-btn:hover {
+  background-color: $primary_light;
+  transition: background-color .3s ease;
+}
+
+.primary-btn:active {
+  background-color: $active-color;
+  transition: background-color .3s ease;
+}
+
+.second-button {
+  @include reset-style;
+  color:  $second-btn-text-color;
+  border-radius: 10px;
+  border: 2px solid $primary;
+  cursor: pointer;
+}
+
+.second-button:focus {
+  background-color: $focus-color;
+  color: $white;
+  outline: 2px solid $active-color;
+  transition: background-color .3s ease, color .3s ease, outline .3s ease;
+}
+
+.second-button:hover {
+  background-color: $primary;
+  color: $white;
+  transition: background-color .3s ease, color .3s ease;
+}
+
+.second-button:active {
+  background-color: $active-color;
+  color: $white;
+  transition: background-color .3s ease, color .3s ease;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+
+// шапка
+.header {
+  margin-bottom: 32px;
+  background-image: url('@img/header-fon.png');
+  background-repeat: no-repeat;
+  background-position-y: 0;
+  background-size: 100% 50px;
+
+
+  &__container {
+    grid-template-rows: 50px 90px 60px;
+    align-items: center;
+  }
+
+  &__phone-container {
+    grid-column: 1/3;
+    grid-row: 1/1;
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: $secondary;
+    min-height: 22px;
+    width: fit-content;
+  }
+
+  // состояния ссылки телефона
+  &__phone:focus {
+    background-color: $second-focus-bg-color;
+    outline: none;
+    transition: background-color .3s ease;
+  }
+
+  &__phone:focus svg path{
+    fill:  $second-focus-color;
+    transition: fill .3s ease;
+  }
+
+  &__phone:hover {
+    color: $second-hover-color;
+    transition: color .3s ease;
+  }
+
+  &__phone:hover svg path{
+    fill: $second-hover-color;
+    transition: fill .3s ease;
+  }
+
+  &__phone:active {
+    color: $second-active-color;
+    background-color: transparent;
+    transition: color .3s ease;
+  }
+
+  &__phone:active svg path{
+    fill: $second-active-color;
+    transition: fill .3s ease;
+  }
+
+  &__additional-nav {
+    grid-column: 6 / -1;
+    justify-self: flex-end;
+  }
+
+  &__additional-nav-list {
+    display: flex;
+    font-size: $main-text-size;
+  }
+
+  &__additaonal-nav-item:not(:last-child) {
+    margin-right: calc(10px + 55 * ((100vw - 1024px) / (1920 - 1024)));
+  }
+
+  &__additaonal-nav-link {
+    color: $second-text-color;
+    position: relative;
+  }
+
+  &__additaonal-nav-link:hover {
+    color: $hover-color;
+    transition: color .5s ease;
+  }
+
+  &__additaonal-nav-link:focus {
+    color: $active-color;
+    background-color: $primary_light;
+    outline: none;
+    transition: color .5s ease, background-color .5s ease;
+  }
+
+  &__additaonal-nav-link::before {
+    position: absolute;
+    opacity: 0;
+    content: '';
+    z-index: -1;
+    top: 0;
+    left: -10px;
+    background-color: $pink_violet;
+    padding: 0 8px;
+    width: 105%;
+    height: 100%;
+  }
+
+  &__additaonal-nav-link:focus {
+   outline: none;
+  }
+
+  &__additaonal-nav-link:focus::before {
+    outline: none;
+    opacity: 1;
+    transition: opacity .5s ease;
+   }
+
+  &__additaonal-nav-link:active {
+    color: $active-color;
+    background-color: transparent;
+    transition: color .5s ease;
+  }
+
+  &__logo-link:focus {
+    outline: 1px solid $primary;
+  }
+
+  &__main-nav-link {
+    position: relative;
+    font-size: $large-text-size;
+  }
+
+  &__main-nav-link::before {
+    position: absolute;
+    opacity: 0;
+    content: '';
+    z-index: -1;
+    top: 0;
+    left: -10px;
+    background-color: $pink_violet;
+    padding: 0 10px;
+    width: 105%;
+    height: 100%;
+  }
+
+  &__main-nav-link:focus {
+   outline: none;
+  }
+
+  &__main-nav-link:focus::before {
+    outline: none;
+    opacity: 1;
+    transition: opacity .5s ease;
+   }
+
+
+  &__main-nav-link:hover {
+    color: $hover-color;
+    transition: color .3s ease;
+  }
+
+  &__main-nav-link:active {
+    color: $active-color;
+    transition: color .3s ease;
+  }
+
+  &__main-nav-link:active::before {
+    color: $active-color;
+    background-color: transparent;
+  }
+
+  &__main-nav-item:not(:last-child) {
+    margin-right: calc(40px + 52 * ((100vw - 1024px) / (1920 - 1032)));
+  }
+
+  &__logo {
+    grid-column: 1 / 3;
+    grid-row: 2 / 2;
+    padding-top: 5px;
+  }
+
+  &__main-nav {
+    grid-column: 4 / -1;
+    grid-row: 2 / 2;
+    justify-self: flex-end;
+    padding-top: 3px;
+  }
+
+  &__main-nav-list {
+    display: flex;
+  }
+
+  &__form-container {
+    grid-column: 1 / 11;
+    grid-row: 3 / 3;
+    position: relative;
+    max-width: 1061px;
+  }
+
+  &__form {
+    max-width: 1061px;
+  }
+
+  &__form-input {
+    width: 94.5%;
+    min-height: 59px;
+    background-color: $grey_light;
+    padding: 0;
+    padding-top: 2px;
+    padding-left: 59px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+  }
+
+  &__form-input-search {
+    position: absolute;
+    top: 20px;
+    left: 32px;
+  }
+
+  &__form-input:focus {
+    outline: 2px solid $primary;
+    transition: outline .3s ease;
+  }
+
+  &__form-input:hover {
+    background-color: $md-grey;
+    transition: background-color .3s ease;
+  }
+
+  &__form-input:target {
+    background-color: $grey_light;
+    outline: none;
+    transition: background-color .3s ease;
+  }
+
+  &__form-input:active .header__form-input-search svg path {
+    fill: $active-color;
+    transition: fill .3s ease;
+  }
+
+  &__form-btn {
+    @include reset-style;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    cursor: pointer;
+  }
+
+  &__form-btn:hover svg path {
+    stroke: $white;
+    transition: stroke .3s ease;
+  }
+
+  &__form-btn:hover circle {
+    fill: $primary;
+    transition: fill .3s ease;
+  }
+
+  &__form-btn:focus {
+    outline: none;
+  }
+
+  &__form-btn:focus svg path {
+    stroke: $white;
+    transition: stroke .3s ease;
+  }
+
+  &__form-btn:focus circle {
+    fill: $primary_light;
+    stroke: $primary;
+    transition: stroke .3s ease;
+  }
+
+  &__form-btn:active circle {
+    fill: $active-color;
+    stroke:  $active-color;
+    transition: stroke .3s ease, fill .3s ease;
+  }
+
+  &__personal {
+    grid-column: 11 / -1;
+    grid-row: 3 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    min-width: 70px;
+  }
+
+  &__personal-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 29px;
+    width: 34px;
+    height: 36px;
+  }
+
+  &__mini-basket {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 34px;
+  }
+
+  &__personal-area:focus {
+    outline: none;
+    background-color: $primary_light;
+  }
+
+  &__personal-area:focus svg {
+    fill: $primary_light;
+    transition: fill .3s ease;
+  }
+
+  &__personal-area:hover svg path {
+    fill: $primary_light;
+    transition: fill .3s ease;
+  }
+
+  &__personal-area:focus svg path {
+    fill: $white;
+    transition: fill .3s ease;
+  }
+
+  &__personal-area:active svg path {
+    fill: $active-color;
+    transition: fill .3s ease;
+  }
+
+  &__personal-area:active {
+    outline: none;
+    background-color: $white;
+  }
+
+  &__mini-basket:focus {
+    outline: none;
+    background-color: $primary_light;
+  }
+
+  &__mini-basket:focus svg path:first-child {
+    fill: white;
+    transition: fill .3s ease;
+  }
+
+  &__mini-basket:hover svg path:first-child {
+    fill: $primary_light;
+    transition: fill .3s ease;
+  }
+
+  &__mini-basket:active {
+    outline: none;
+    background-color: transparent;
+  }
+
+  &__mini-basket:active svg path:first-child {
+    fill: $active-color;
+    transition: fill .3s ease;
+  }
+
+  &__crumbs {
+    grid-column: 1 / 6;
+    grid-row: 4/4;
+  }
+
+  &__crumbs-list {
+    min-height: 39px;
+    display: flex;
+    align-items: end;
+    flex-direction: row;
+  }
+
+  &__crumbs-item {
+    position: relative;
+    margin-right: 15px;
+  }
+
+  &__crumbs-item:not(:last-child)::after {
+    position: absolute;
+    content: '/';
+    color: $grey;
+    right: -12px;
+  }
+
+  &__crumbs-link {
+    color: $grey;
+    font-size: 14px;
+    font-family: 'Open sans';
+  }
+}
+
+.hero {
+  background-image: url('@img/main-banner-1920.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 240px;
+  padding: 80px 0;
+  margin-bottom: $section-gap;
+
+  &__title {
+    color: $second-text-color;
+    max-width: 496px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 49px;
+    padding-top: 2px;
+    font-size: 48px;
+    line-height: normal;
+    letter-spacing: 2px;
+  }
+
+  &__btn {
+    padding: 22px 47px;
+    min-width: 187px;
+    text-align: center;
+    font-size: $large-text-size;
+    line-height: 100%;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  &__btn:focus {
+    background-color: $focus-color;
+    outline: 2px solid $active-color;
+    transition: background-color .3s ease, outline .3s ease;
+  }
+
+  &__btn:hover {
+    background-color: $focus-color;
+    transition: background-color .3s ease;
+  }
+
+  &__btn:active {
+    background-color: $active-color;
+    outline: none;
+    transition: background-color .3s ease;
+  }
+
+  &__btn:disabled {
+    background-color: $disabled-bg-color;
+    color: $second-text-color;
+    outline: none;
+    transition: background-color .3s ease, color .3s ease;
+  }
+}
+
+.card-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 30px;
+  background-color: $grey_light;
+  border-radius: 10px;
+
+  &__pic {
+    width: fit-content;
+    margin-bottom: 16px;
+  }
+  &__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 22px;
+    font-size: $title-card-title-text-sz;
+    line-height: $line-height-card-h;
+    font-weight: 400;
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 23px;
+  }
+
+  &__btn {
+    align-self: start;
+    padding: 19px 35px;
+  }
+
+  &__nameplate {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 30px;
+    left: 0;
+  }
+
+
+}
+.offers {
+  margin-bottom: $section-gap;
+
+  &__title {
+    margin-bottom: 21px;
+  }
+
+  &__card-area {
+    grid-template-columns: 3fr 6fr 3fr;
+    grid-auto-columns: 3fr 6fr 3fr;
+    gap: $card-gap;
+    grid-template-rows: minmax(511px, auto);
+  }
+
+  &__card-promotional-price {
+    position: relative;
+    color: $secondary;
+    font-size: 18px;
+    line-height: 130%;
+    margin-right: 65px;
+  }
+
+  &__card-promotional-price::after {
+    position: absolute;
+    content: 'руб';
+    top: 0;
+    left: 110%;
+  }
+
+  &__card-price {
+    margin-bottom: 19px;
+  }
+
+  &__card-old-price {
+    position: relative;
+    font-size: $large-text-size;
+    text-decoration: line-through;
+    color: $second-text-color;
+  }
+
+  &__card-btn {
+    padding: 16px 35px;
+  }
+
+  &__card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 239px;
+  }
+
+  &__nameplate {
+    min-width: 92px;
+    max-width: 50%;
+    min-height: 34px;
+    background-image: url('@img/offers-nameplate-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  &__nameplate-text {
+    color: $white-text-color;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  &__card-1 {
+    padding-top: 72px;
+  }
+
+  &__card-3 {
+    padding-top: 64px;
+  }
+
+  &__card-4, &__card-5, &__card-6 {
+    display: none;
+  }
+}
+
+.big-card {
+  padding-top: 37px;
+  &__content {
+    align-self: flex-start;
+    max-width: 225px;
+  }
+}
+
+.big-card::after {
+  position: absolute;
+  content: '';
+  bottom: 30px;
+  right: 30px;
+  background-image: url('@img/fabric-sofa-sxema.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-width: 230px;
+  min-height: 107px;
+}
+
+.rating {
+  margin-bottom: $section-gap;
+
+  &__title {
+    margin-bottom: 22px;
+  }
+
+  &__card-area {
+    grid-template-columns: repeat(4, 3fr);
+    grid-auto-columns: 2fr;
+    gap: $card-gap;
+    grid-template-rows: minmax(420px, auto);
+  }
+
+  &__card {
+    justify-content: inherit;
+    padding: 30px 15px;
+  }
+
+  &__card-top-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    min-height: 161px;
+    margin-bottom: 16px;
+  }
+
+  &__card-pic {
+    margin-bottom: 0;
+  }
+
+  &__nameplate {
+    display: flex;
+    justify-content: center;
+    left: 30px;
+    height: 21px;
+  }
+
+  &__card-prices {
+    position: relative;
+    margin-bottom: 25px;
+    width: fit-content;
+  }
+
+  &__nameplate svg {
+    margin-right: 5px;
+  }
+
+  &__card-prices::after {
+    position: absolute;
+    content: 'руб';
+    top: 0;
+    left: 110%;
+  }
+
+  &__nameplate-text {
+    color: $secondary;
+  }
+
+  &__card-content {
+    margin-bottom: auto;
+    padding-left: 15px;
+    align-self: flex-start;
+  }
+
+  &__card-title  {
+    max-width: 236px;
+  }
+
+  &__card-btn {
+    margin-left: 15px;
+    padding: 17px 35px;
+  }
+}
+
+.banner {
+  margin-bottom: $section-gap;
+  min-height: 300px;
+  background-image: url('@img/banner-oxford.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 150px 0;
+
+  &__title {
+    padding: 0;
+    padding-top: 4px;
+    margin: 0;
+    color: $oxford-title-color;
+    font-family: 'Playfair';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%;
+    max-width: 508px;
+  }
+
+  &__descr {
+    max-width: 460px;
+    margin-bottom: 49px;
+    color: $white-text-color;
+    font-size: 48px;
+    line-height: 120%;
+    font-weight: 400;
+  }
+
+  &__btn {
+    padding: 21px 32px;
+    letter-spacing: 1px;
+  }
+}
+
+.categories {
+  margin-bottom: 66px;
+
+  &__title {
+    margin-bottom: 21px;
+    padding-left: 1px;
+    letter-spacing: normal;
+  }
+
+  &__card-link-mob {
+    display: none;
+  }
+
+  &__card-area {
+    grid-template-rows: minmax(511px, auto) minmax(405px, auto);
+    grid-template-areas:
+    "c-card-1 c-card-1 c-card-1 c-card-1 c-card-1 c-card-1 c-card-2 c-card-2 c-card-2 c-card-2 c-card-2 c-card-2"
+    "c-card-3 c-card-3 c-card-3 c-card-3 c-card-4 c-card-4 c-card-4 c-card-4 c-card-5 c-card-5 c-card-5 c-card-5";
+    gap: 30px;
+  }
+
+  &__card-1 {
+    grid-area: c-card-1;
+  }
+  &__card-2 {
+    grid-area: c-card-2;
+  }
+  &__card-3 {
+    grid-area: c-card-3;
+  }
+  &__card-4 {
+    grid-area: c-card-4;
+  }
+  &__card-5 {
+    grid-area: c-card-5;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 29px 0 30px 0;
+    background-color: $grey_light;
+    border-radius: 10px;
+  }
+
+  &__card-list {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 14px;
+    padding-left: 30px;
+  }
+
+  &__card-filter-link {
+    color: $second-text-color;
+    font-size: 14px;
+  }
+
+  &__card-title {
+    font-size: 24px;
+    margin: 0;
+    padding-left: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__card-img {
+    margin-bottom: 30px;
+  }
+
+  &__card-link {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    width: fit-content;
+    font-size: $large-text-size;
+    font-weight: 700;
+    color: $primary;
+  }
+
+  &__card-link svg {
+    margin-left: 3px;
+    width: 22px;
+    height: 22px;
+  }
+
+  &__card-link-text {
+    border-bottom: 2px solid transparent;
+    letter-spacing: 1px;
+  }
+
+  &__card-link:focus .categories__card-link-text {
+    border-bottom: 2px solid $primary;
+    transition: border-bottom .3s ease;
+  }
+
+  &__card-link:focus {
+    outline: none;
+  }
+
+  &__card-link:focus svg path {
+    stroke: $white;
+    transition: stroke .3s ease;
+  }
+
+  &__card-link:focus circle {
+    fill: $primary_light;
+    stroke: $primary;
+    transition: stroke .3s ease;
+  }
+
+  &__card-link:hover .categories__card-link-text {
+    border-bottom: 2px solid $primary;
+    transition: border-bottom .3s ease;
+  }
+
+  &__card-link:hover svg path {
+    stroke: $white;
+    transition: stroke .3s ease;
+  }
+
+  &__card-link:hover circle {
+    fill: $primary;
+    transition: fill .3s ease;
+  }
+
+  &__card-link:active circle {
+    fill: $active-color;
+    stroke:  $active-color;
+    transition: stroke .3s ease, fill .3s ease;
+  }
+
+  &__card-link:active .categories__card-link-text {
+    color: $active-color;
+    border-bottom: 2px solid $active-color;
+    transition: border-bottom .3s ease, color .3s ease;
+  }
+}
+
+.useful {
+  margin-bottom: 66px;
+
+  &__card-area {
+    grid-template-columns: 6fr 6fr;
+    grid-template-rows: minmax(676px, auto);
+    gap: $card-gap;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    background-color: $grey_light;
+    border-radius: 10px;
+    padding-bottom: 31px;
+  }
+
+  &__card-img {
+    margin-bottom: 25px;
+  }
+
+  &__card-descr {
+    padding-left: 30px;
+    padding-right: 10px;
+    max-width: 567px;
+    margin-bottom: auto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__card-btn {
+    margin-left: 30px;
+    padding: 16px 35px;
+    width: fit-content;
+  }
+
+  &__card-3, &__card-4, &__card-5 {
+    display: none;
+  }
+
+}
+
+.feedback {
+  margin-bottom: $section-gap;
+
+  &__container {
+    grid-template-columns: 6fr 6fr;
+    gap: 30px;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+  }
+
+  &__descr {
+    margin-bottom: 11px;
+    color: $second-text-color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+  }
+
+  &__form-input {
+    min-height: 54px;
+    background-color: $grey_light;
+    border: none;
+    border-radius: 10px;
+    padding-left: 18px;
+  }
+
+  &__form-input:focus {
+    background-color: $pink_light;
+    outline: 1px solid $primary;
+  }
+  &__form-input:hover {
+    background-color: $md-grey;
+  }
+
+  &__right-panel {
+    padding-top: 27px;
+  }
+
+  &__form-input:active {
+    background-color: $pink_light;
+    outline: 1px solid #B8EC64;
+  }
+
+  &__form-obr-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__form-btn {
+    padding: 17px 37px;
+    width: fit-content;
+    margin-bottom: 15px;
+  }
+
+  &__form-lab {
+    position: relative;
+    font-size: 14px;
+  }
+
+  &__form-check {
+    position: relative;
+    opacity: 0;
+    margin-right: 5px;
+  }
+
+  &__form-lab::after {
+    position: absolute;
+    content: '';
+    top: 3px;
+    left: 1px;
+    border: 1px solid $grey;
+    border-radius: 3px;
+    width: 11px;
+    height: 11px;
+  }
+
+  &__form-custom-check {
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    top: 1px;
+    border-radius: 3px;
+    width: 14px;
+    height: 14px;
+    opacity: 0;
+  }
+
+  &__form-custom-check svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  &__form-check:checked + .feedback__form-custom-check {
+    opacity: 1;
+  }
+
+  &__form-link {
+    color: $primary;
+  }
+}
+
+.footer {
+
+  &__bg {
+    background-color: $md-grey;
+  }
+
+  &__container {
+    padding: 25px 24px 14px 24px;
+  }
+
+  &__left-panel {
+    grid-column: 1 / 3;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__logo-link {
+    margin-bottom: 29px;
+  }
+
+  &__logo-link:focus {
+    outline: 1px solid $primary;
+  }
+
+  &__social-link-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__social-link:focus {
+    outline: none;
+  }
+
+  &__social-link:focus svg path{
+    fill: $focus-color;
+    outline: none;
+    transition: fill .3s ease;
+  }
+
+  &__social-link:hover svg path{
+    fill: $primary;
+    transition: fill .3s ease;
+  }
+
+  &__social-link:active svg path{
+    fill: $active-color;
+    transition: fill .3s ease;
+  }
+
+  &__right-panel {
+    grid-column: 5 / -1;
+    display: grid;
+    grid-template-columns: 84px 154px  141px 128px;
+    gap: 112px;
+    width: 98.8%;
+    padding-top: 3px;
+  }
+
+  &__right-panel-list__title {
+    margin: 0;
+    margin-bottom: 3px;
+    font-size: 16px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  &__catalog {
+    padding-left: 10px;
+  }
+
+  &__catalog-right-panel {
+    padding-top: 0;
+  }
+
+  &__catalog-right-panel {
+    padding-bottom: 10px;
+  }
+
+  &__copy-container {
+    padding: 0 0;
+    min-width: 117px;
+  }
+
+  &__link {
+    color: $second-text-color;
+    font-size: 14px;
+  }
+
+  &__copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30px;
+
+  }
+
+  &__copy-link {
+    color: $second-text-color;
+    font-size: 14px;
+  }
+
+  &__copy-link:focus {
+    color: $focus-color;
+    outline: none;
+    transition: color .3s ease;
+  }
+}
+
+
+
+// каталог
+
+.swiper {
+  max-width: 953px;
+  max-height: 100%;
+}
+.checkbox-label {
+  position: relative;
+  padding-top: 4px;
+  font-size: 16px;
+}
+
+.filter-block {
+  grid-column: 1 / 4;
+
+  &__container {
+    height: 100%;
+  }
+
+  &__title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  &__panel-title {
+    margin: 0;
+    margin-top: 2px;
+    margin-bottom: 11px;
+    font-size: 16px;
+    color: $grey-title-catalog;
+  }
+
+  &__area {
+    display: flex;
+    flex-direction: column;
+    height: 92.3%;
+    row-gap: 26px;
+  }
+
+  &__panel {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__form-check {
+    position: relative;
+    opacity: 0;
+    margin-right: 15px;
+  }
+
+  &__category-checkbox-label {
+    color: $grey-title-catalog;
+    padding-top: 2px;
+  }
+
+  &__form-custom-check {
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    top: 1px;
+    border-radius: 3px;
+    width: 14px;
+    height: 14px;
+    opacity: 0;
+  }
+
+  &__form-check:checked + .filter-block__form-custom-check {
+    opacity: 1;
+  }
+
+  &__price-label span {
+    color: $grey-title-catalog;
+    font-size: 16px;
+    min-height: 26px;
+    margin-right: 6px;
+  }
+
+  &__price-panel {
+    margin-bottom: auto;
+  }
+
+  &__price-input {
+    color: $grey;
+    max-width: 73px;
+    padding-left: 13px;
+  }
+
+  &__card {
+    padding: 0;
+    max-width: 296px;
+    align-items: flex-start;
+    background-color: $main-text-color;
+    padding-bottom: 32px;
+  }
+
+  &__card-title {
+    padding-left: 30px;
+    padding-top: 12px;
+    margin-bottom: 0;
+    font-family: 'Playfair';
+    font-size: 24px;
+    color: $oxford-title-color;
+  }
+
+  &__card-descr {
+    max-width: 199px;
+    padding-left: 30px;
+    color: $grey;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 12px;
+  }
+
+  &__card-content {
+    min-height: 95px;
+    margin-bottom: 0;
+  }
+
+  &__card-link {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    color: $primary;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+
+  &__card-link svg {
+    margin-left: 12px;
+  }
+
+  &__price-title {
+    margin-bottom: 7px;
+  }
+
+  &__price-input {
+    min-height: 24px;
+    max-width: 69px;
+    padding-left: 11px;
+  }
+
+  &__price-label {
+    margin-right: 3px;
+  }
+
+}
+
+
+
+.checkbox-label::after {
+  position: absolute;
+  content: '';
+  top: 2px;
+  left: 1px;
+  border: 1px solid $grey;
+  border-radius: 3px;
+  width: 17px;
+  height: 17px;
+}
+
+.checkbox-label:nth-child(2n) {
+  padding-top: 3px;
+}
+
+.checkbox-label:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.catalog {
+  grid-column: 4 / -1;
+  padding-top: 2px;
+
+  &__title {
+    font-size: 24px;
+  }
+
+  &__swiper {
+    padding-bottom: 10px;
+  }
+
+  &__card-area {
+    grid-template-columns: repeat(3, 3fr);
+    grid-auto-columns: 2fr;
+    gap: 32px;
+    grid-template-rows: minmax(420px, auto);
+  }
+
+  &__card {
+    justify-content: inherit;
+    padding: 30px 15px;
+  }
+
+  &__card-top-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    min-height: 161px;
+    margin-bottom: 16px;
+  }
+
+  &__card-pic {
+    margin-bottom: 0;
+  }
+
+  &__nameplate {
+    display: flex;
+    justify-content: center;
+    left: 30px;
+    height: 21px;
+  }
+
+  &__card-prices {
+    position: relative;
+    margin-bottom: 25px;
+    width: fit-content;
+  }
+
+  &__nameplate svg {
+    margin-right: 5px;
+  }
+
+  &__card-prices::after {
+    position: absolute;
+    content: 'руб';
+    top: 0;
+    left: 110%;
+  }
+
+  &__nameplate-text {
+    color: $secondary;
+  }
+
+  &__card-content {
+    margin-bottom: 0px;
+    padding-left: 15px;
+    align-self: flex-start;
+  }
+
+  &__card-btn {
+    align-self: start;
+    margin-left: 15px;
+    padding: 16px 35px;
+}
+
+&__card-price {
+  margin: 0;
+}
+
+&__swiper-wrapper {
+  margin-bottom: 30px;
+}
+
+&__swiper-pagination {
+  display: flex;
+  justify-content: center;
+}
+
+}
+
+.catalog-cont {
+  margin-bottom: 61px;
+  column-gap: 32px;
+}
+
+.swiper-pagination-bullet {
+  border: 2px solid $primary_shade;
+  background: transparent;
+  width: 28px;
+  height: 21px;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 7px;
+  color: $primary_shade;
+  opacity: 1;
+}
+
+
+.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: $primary_shade;
+  color: $white;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap,6px);
+}
+
+.title-mob-catalog {
+  display: none;
+}
+
+// карта товара
+
+.product-card {
+  margin-bottom: 51px;
+  padding-top: 45px;
+  padding-left: 77px;
+
+  &__area {
+    display: grid;
+    grid-template-columns: repeat(2, 6fr);
+    grid-template-rows: repeat(2, minmax(245px, auto));
+    column-gap: 32px;
+    row-gap: 93px;
+  }
+
+  &__main-contact {
+    padding-top: 23px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__main-title {
+    max-width: 600px;
+    margin-bottom: 5px;
+    font-size: 24px;
+  }
+
+  &__nameplate {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__main-descr {
+    margin-bottom: 21px;
+    font-size: 14px;
+    color: $grey;
+  }
+
+  &__main-price {
+    margin-bottom: 21px;
+    font-size: 36px;
+    line-height: 130%;
+  }
+
+  &__main-btn {
+    padding: 18px 39px;
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  &__link {
+    margin-left: 30px;
+    color: $primary;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+  }
+
+  &__construction-title {
+    margin-bottom: 6px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  &__construction-descr {
+    font-size: 14px;
+    line-height: 194%;
+    margin-bottom: 103px;
+  }
+
+  &__characteristics {
+    display: flex;
+    padding-top: 6px;
+  }
+
+  &__characteristics-list {
+    min-width: 50%;
+  }
+
+  &__characteristics-item {
+    display: flex;
+    align-items: baseline;
+    color: $grey;
+    min-width: 50%;
+  }
+
+  &__characteristics-item:not(:last-child), &__characteristics-list-item-meaning:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__characteristics-container, &__characteristics-list-item-meaning-content {
+    font-size: 14px;
+  }
+
+  &__characteristics-span {
+    display: block;
+    flex: 1;
+    width: auto;
+    height: auto;
+    border-bottom: 1.3px dotted $grey;
+  }
+}
+
+.similar-products {
+  margin-bottom: 70px;
+  &__card-area {
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    column-gap: 32px;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    font-size: 24px;
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: $grey_light;
+    border-radius: 10px;
+    padding: 56px 12px 30px 12px;
+  }
+
+  &__nameplate {
+    top: 32px;
+    left: 30px;
+  }
+
+  &__card-pic {
+    align-self: flex-end;
+    margin-bottom: 13px;
+  }
+
+  &__card-top-panel {
+    align-self: center;
+    display: flex;
+    min-height: 151px;
+  }
+
+  &__card-content {
+    margin-left: 18px;
+    margin-bottom: auto;
+  }
+
+  &__card-btn {
+    margin-left: 18px;
+    padding: 16px 35px;
+  }
+
+  &__nameplate-text {
+    margin-left: 7px;
+  }
+
+  &__card-prices {
+    margin-bottom: 26px;
+  }
+
+  &__card-price {
+    color: $grey;
+  }
+}
+
+@import "media.scss";

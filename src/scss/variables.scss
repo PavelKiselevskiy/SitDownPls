@@ -1,0 +1,50 @@
+
+  // общие цвета
+  $secondary: #FF862F;
+  $primary:  #A65CF0;
+  $primary_light: #C998FB;
+  $primary_shade: #7033AC;
+  $pink_light: #F8EFFF;
+  $pink_violet: #EBD1FF;
+  $secondary_light: #FFBD59;
+  $secondary_shade: #BB370E;
+  $white: #FFFFFF;
+  $md-grey: #EAEAEA;
+  $grey_light: #F6F6F6;
+  $grey: #999999;
+  $grey-title-catalog: #666;
+  // цвета состояний
+  $hover-color: #A65CF0;
+  $focus-color: #C998FB;
+  $active-color: #7033AC;
+  $second-hover-color: #FFBD59;
+  $second-focus-color: #FF862F;
+  $second-active-color: #BB370E;
+  $second-focus-bg-color: #FFF5D1;
+  $disabled-bg-color: #EAEAEA;
+  $oxford-title-color: #D5B986;
+  // цвета текста
+  $main-text-color: #333333;
+  $second-text-color: #999999;
+  $white-text-color: #ffffff;
+  $second-btn-text-color: #A65CF0;
+  // размеры шрифтов
+  $main-text-size: 14px;
+  $large-text-size: 16px;
+  $second-title-text-sz: 32px;
+  $title-card-title-text-sz: 24px;
+  // отступы
+  $section-gap: 69px;
+  $card-gap: 30px;
+  $line-height-card-h: 130%;
+
+@mixin reset-style {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  color: black;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  text-decoration: none;
+}
