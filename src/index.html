@@ -45,7 +45,7 @@
       </nav>
       <div class="header__logo">
         <a class="header__logo-link" href="#">
-          <img src="@img/logo-1920.png" alt="Логотип компании СитДаунПлиз">
+          <img class="header__logo-img" src="@img/logo-1920.png" alt="Логотип компании СитДаунПлиз">
         </a>
       </div>
       <nav class="header__main-nav">
@@ -124,11 +124,12 @@
     </div>
   </header>
   <main>
+    <h1 class="visually-hidden">магазин SitDownPls - лучшая мебель только для вас!</h1>
     <section class="hero">
       <div class="container hero__container">
-        <h1 class="hero__title">
+        <h2 class="hero__title">
           Скидка&nbsp;15% на&nbsp;первую покупку
-        </h1>
+        </h2>
         <button class="hero__btn primary-btn">
           Получить!
         </button>
@@ -139,170 +140,187 @@
         <h2 class="offers__title second-title">
           Специальные предложения
         </h2>
-        <div class="offers__card-area grid">
-          <div class="offers__card card-main offers__card-1">
-            <picture class="offers__card-pic card-main__pic">
-              <img class="offers__img" src="@img/armchair-1920.png" alt="изображение кресла велюрового">
-            </picture>
-            <div class="offers__card-content card-main__content">
-              <h3 class="offers__card-title card-main__title">
-                Кресло велюровое &rdquo;X-24&ldquo;
-              </h3>
-              <div class="offers__card-price card-main__price">
-                <p class="offers__card-promotional-price">
-                  15&nbsp;990
-                </p>
-                <p class="offers__card-old-price">
-                  24&nbsp;990 руб
-                </p>
-              </div>
 
-            </div>
-            <button class="offers__card-btn second-button card-main__btn">
-              Купить
-            </button>
-            <div class="offers__nameplate card-main__nameplate">
-              <p class="offers__nameplate-text">
-                - 9&nbsp;000
-              </p>
-            </div>
-          </div>
-          <div class="offers__card card-main big-card offers__card-2">
-            <picture class="offers__card-pic card-main__pic">
-              <source media="(max-width: 768px)" srcset="@img/fabric-sofa-768.png">
-              <img class="offers__img" src="@img/fabric-sofa-1920.png" alt="изображение дивана тканевого">
-            </picture>
-            <div class="offers__card-content big-card__content card">
-              <h3 class="offers__card-title card-main__title">
-                Диван тканевый &rdquo;Z-44&ldquo;
-              </h3>
-              <div class="offers__card-price card-main__price">
-                <p class="offers__card-promotional-price">
-                  22&nbsp;990
-                </p>
-                <p class="offers__card-old-price">
-                  32&nbsp;990 руб
-                </p>
-              </div>
-            </div>
-            <button class="offers__card-btn second-button card-main__btn">
-              Купить
-            </button>
-            <div class="offers__nameplate card-main__nameplate">
-              <p class="offers__nameplate-text">
-                -&nbsp;10&nbsp;000
-              </p>
-            </div>
-          </div>
-          <div class="offers__card card-main offers__card-3">
-            <picture class="offers__card-pic card-main__pic">
-
-              <img class="offers__img" src="@img/Clock-1920.png" alt="изображение будильника Кварц-23">
-            </picture>
-            <div class="offers__card-content">
-              <h3 class="offers__card-title card-main__title">
-                Будильник <br> &rdquo;Quartz-23&ldquo;
-              </h3>
-              <div class="offers__card-price card-main__price">
-                <p class="offers__card-promotional-price ">
-                  1&nbsp;290
-                </p>
-                <p class="offers__card-old-price">
-                  1&nbsp;890 руб
+        <ul class="offers__list offers__card-area grid"> 
+          <li class="offers__item">
+            <article class="offers__card card-main offers__card-1">
+              <picture class="offers__card-pic card-main__pic">
+                <img class="offers__img" src="@img/armchair-1920.png" alt="изображение кресла велюрового">
+              </picture>
+              <div class="offers__card-content card-main__content">
+                <h3 class="offers__card-title card-main__title">
+                  Кресло велюровое &rdquo;X-24&ldquo;
+                </h3>
+                <div class="offers__card-price card-main__price">
+                  <span class="offers__card-promotional-price">
+                    15&nbsp;990
+                  </span>
+                  <span class="offers__card-old-price">
+                    24&nbsp;990 руб
+                  </span>
+                </div>
+                <button class="offers__card-btn second-button card-main__btn">
+                  Купить
+                </button>
+              </div>          
+              <div class="offers__nameplate card-main__nameplate">
+                <p class="offers__nameplate-text">
+                  - 9&nbsp;000
                 </p>
               </div>
-            </div>
-              <button class="offers__card-btn second-button card-main__btn">
-                Купить
-              </button>
-            <div class="offers__nameplate card-main__nameplate">
-              <p class="offers__nameplate-text">
-                - 600
-              </p>
-            </div>
-          </div>
-          <div class="offers__card card-main offers__card-4">
-            <picture class="offers__card-pic card-main__pic">
-              <source media="(max-width: 320px)" srcset="@img/offers-card-4.png">
-              <img class="offers__img" src="@img/offers-card-4.png" alt="изображение скульптуры oh my deer">
-            </picture>
-            <div class="offers__card-content">
-              <h3 class="offers__card-title card-main__title">
-                Мини-скульптура &rdquo;Oh&nbsp;my&nbsp;deer&ldquo;
-              </h3>
-              <div class="offers__card-price card-main__price">
-                <p class="offers__card-promotional-price ">
-                  690
-                </p>
-                <p class="offers__card-old-price">
-                  990 руб
+            </article>
+          </li>
+          <li class="offers__item">
+            <article class="offers__card card-main big-card offers__card-2">
+              <picture class="offers__card-pic card-main__pic">
+                <source media="(max-width: 768px)" srcset="@img/fabric-sofa-768.png">
+                <img class="offers__img" src="@img/fabric-sofa-1920.png" alt="изображение дивана тканевого">
+              </picture>
+              <div class="offers__card-content big-card__content card">
+                <h3 class="offers__card-title card-main__title">
+                  Диван тканевый &rdquo;Z-44&ldquo;
+                </h3>
+                <div class="offers__card-price card-main__price">
+                  <span  class="offers__card-promotional-price">
+                    22&nbsp;990
+                  </span>
+                  <span class="offers__card-old-price">
+                    32&nbsp;990 руб
+                  </span>
+                </div>
+                <button class="offers__card-btn second-button card-main__btn">
+                  Купить
+                </button>
+              </div>
+            
+              <div class="offers__nameplate card-main__nameplate">
+                <p class="offers__nameplate-text">
+                  -&nbsp;10&nbsp;000
                 </p>
               </div>
-            </div>
-              <button class="offers__card-btn second-button card-main__btn">
-                Купить
-              </button>
-            <div class="offers__nameplate card-main__nameplate">
-              <p class="offers__nameplate-text">
-                - 300
-              </p>
-            </div>
-          </div>
-          <div class="offers__card card-main offers__card-5">
-            <picture class="offers__card-pic card-main__pic">
-              <source media="(max-width: 390px)" srcset="@img/offers-card-5.png">
-              <img class="offers__img" src="@img/offers-card-5.png" alt="изображение будильника Кварц-23">
-            </picture>
-            <div class="offers__card-content">
-              <h3 class="offers__card-title card-main__title">
-                Диван вел-флок &rdquo;Z&#8209;85&ldquo;
-              </h3>
-              <div class="offers__card-price card-main__price">
-                <p class="offers__card-promotional-price ">
-                  22&nbsp;990
-                </p>
-                <p class="offers__card-old-price">
-                  32&nbsp;990 руб
+            </article>
+          </li>
+          <li class="offers__item">
+            <article class="offers__card card-main offers__card-3">
+              <picture class="offers__card-pic card-main__pic">
+  
+                <img class="offers__img" src="@img/Clock-1920.png" alt="изображение будильника Кварц-23">
+              </picture>
+              <div class="offers__card-content">
+                <h3 class="offers__card-title card-main__title">
+                  Будильник <br> &rdquo;Quartz-23&ldquo;
+                </h3>
+                <div class="offers__card-price card-main__price">
+                  <span  class="offers__card-promotional-price ">
+                    1&nbsp;290
+                  </span>
+                  <span class="offers__card-old-price">
+                    1&nbsp;890 руб
+                  </span>
+                </div>
+                <button class="offers__card-btn second-button card-main__btn">
+                  Купить
+                </button>
+              </div>
+              
+              <div class="offers__nameplate card-main__nameplate">
+                <p class="offers__nameplate-text">
+                  - 600
                 </p>
               </div>
-            </div>
-              <button class="offers__card-btn second-button card-main__btn">
-                Купить
-              </button>
-            <div class="offers__nameplate card-main__nameplate">
-              <p class="offers__nameplate-text">
-                - 10&nbsp;000
-              </p>
-            </div>
-          </div>
-          <div class="offers__card card-main offers__card-6">
-            <picture class="offers__card-pic card-main__pic">
-              <img class="offers__img" src="@img/offers-card-6.png" alt="изображение будильника Кварц-23">
-            </picture>
-            <div class="offers__card-content">
-              <h3 class="offers__card-title card-main__title">
-                Термометр + гидрометр &rdquo;H&#8209;18&ldquo;
-              </h3>
-              <div class="offers__card-price card-main__price">
-                <p class="offers__card-promotional-price ">
-                  1&nbsp;390
-                </p>
-                <p class="offers__card-old-price">
-                  2&nbsp;090 руб
+            </article>
+          </li>
+          <li class="offers__item">
+            <article class="offers__card card-main offers__card-4">
+              <picture class="offers__card-pic card-main__pic">
+                <source media="(max-width: 320px)" srcset="@img/offers-card-4.png">
+                <img class="offers__img" src="@img/offers-card-4.png" alt="изображение скульптуры oh my deer">
+              </picture>
+              <div class="offers__card-content">
+                <h3 class="offers__card-title card-main__title">
+                  Мини-скульптура &rdquo;Oh&nbsp;my&nbsp;deer&ldquo;
+                </h3>
+                <div class="offers__card-price card-main__price">
+                  <span  class="offers__card-promotional-price ">
+                    690
+                  </span>
+                  <span class="offers__card-old-price">
+                    990 руб
+                  </span>
+                </div>
+                <button class="offers__card-btn second-button card-main__btn">
+                  Купить
+                </button>
+              </div>
+                
+              <div class="offers__nameplate card-main__nameplate">
+                <p class="offers__nameplate-text">
+                  - 300
                 </p>
               </div>
-            </div>
-              <button class="offers__card-btn second-button card-main__btn">
-                Купить
-              </button>
-            <div class="offers__nameplate card-main__nameplate">
-              <p class="offers__nameplate-text">
-                - 700
-              </p>
-            </div>
-          </div>
-
-        </div>
+            </article>
+          </li>
+          <li class="offers__item">
+            <article class="offers__card card-main offers__card-5">
+              <picture class="offers__card-pic card-main__pic">
+                <source media="(max-width: 390px)" srcset="@img/offers-card-5.png">
+                <img class="offers__img" src="@img/offers-card-5.png" alt="изображение будильника Кварц-23">
+              </picture>
+              <div class="offers__card-content">
+                <h3 class="offers__card-title card-main__title">
+                  Диван вел-флок &rdquo;Z&#8209;85&ldquo;
+                </h3>
+                <div class="offers__card-price card-main__price">
+                  <span  class="offers__card-promotional-price ">
+                    22&nbsp;990
+                  </span>
+                  <span class="offers__card-old-price">
+                    32&nbsp;990 руб
+                  </span>
+                </div>
+                <button class="offers__card-btn second-button card-main__btn">
+                  Купить
+                </button>
+              </div>
+              
+              <div class="offers__nameplate card-main__nameplate">
+                <p class="offers__nameplate-text">
+                  - 10&nbsp;000
+                </p>
+              </div>
+            </article>
+          </li>
+          <li class="offers__item">
+            <article class="offers__card card-main offers__card-6">
+              <picture class="offers__card-pic card-main__pic">
+                <img class="offers__img" src="@img/offers-card-6.png" alt="изображение будильника Кварц-23">
+              </picture>
+              <div class="offers__card-content">
+                <h3 class="offers__card-title card-main__title">
+                  Термометр + гидрометр &rdquo;H&#8209;18&ldquo;
+                </h3>
+                <div class="offers__card-price card-main__price">
+                  <span  class="offers__card-promotional-price ">
+                    1&nbsp;390
+                  </span>
+                  <span class="offers__card-old-price">
+                    2&nbsp;090 руб
+                  </span>
+                </div>
+                <button class="offers__card-btn second-button card-main__btn">
+                  Купить
+                </button>
+              </div>
+                
+              <div class="offers__nameplate card-main__nameplate">
+                <p class="offers__nameplate-text">
+                  - 700
+                </p>
+              </div>
+            </article>
+          </li>
+      
+        </ul>
       </div>
     </section>
     <section class="rating">
@@ -310,252 +328,276 @@
         <h2 class="second-title rating__title">
           Высокий рейтинг
         </h2>
-        <div class="rating__card-area grid">
-          <div class="rating__card  card-main rating__card-1">
-            <div class="rating__card-top-panel">
-            <picture class="rating__card-pic card-main__pic">
-              <source media="(max-width: 390px)" srcset="@img/sofa-leather-390.png">
-              <source media="(max-width: 768px)" srcset="@img/sofa-leather-768.png">
-              <img class="rating__img" src="@img/sofa-leather-1920.png" alt="изображение кресла велюрового">
-            </picture>
-            </div>
-            <div class="rating__card-content">
-              <h3 class="rating__card-title card-main__title">
-                Диван кожаный &rdquo;R&#8209;94&ldquo;
-              </h3>
-              <div class="rating__card-prices card-main__price">
-                <p class="rating__card-price">
-                  94&nbsp;990
+        <ul class="rating__list rating__card-area grid">
+          <li class="rating__item">
+            <article class="rating__card  card-main rating__card-1">
+              <div class="rating__card-top-panel">
+              <picture class="rating__card-pic card-main__pic">
+                <source media="(max-width: 390px)" srcset="@img/sofa-leather-390.png">
+                <source media="(max-width: 768px)" srcset="@img/sofa-leather-768.png">
+                <img class="rating__img" src="@img/sofa-leather-1920.png" alt="изображение кресла велюрового">
+              </picture>
+              </div>
+              <div class="rating__card-content">
+                <h3 class="rating__card-title card-main__title">
+                  Диван кожаный &rdquo;R&#8209;94&ldquo;
+                </h3>
+                <div class="rating__card-prices card-main__price">
+                  <span class="rating__card-price">
+                    94&nbsp;990
+                  </span>
+                </div>
+                <a href="card.html" class="rating__card-btn card-main__btn second-button">
+                  Купить
+                </a>
+              </div>
+              
+              <div class="rating__nameplate card-main__nameplate">
+                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
+                  </svg>
+  
+                <p class="rating__nameplate-text">
+                  5,0
                 </p>
               </div>
-            </div>
-            <a href="card.html" class="rating__card-btn card-main__btn second-button">
-              Купить
-            </a>
-            <div class="rating__nameplate card-main__nameplate">
-              <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
-                </svg>
-
-              <p class="rating__nameplate-text">
-                5,0
-              </p>
-            </div>
-          </div>
-          <div class="rating__card  card-main rating__card-2">
-            <div class="rating__card-top-panel">
-            <picture class="rating__card-pic card-main__pic">
-              <source media="(max-width: 320px)" srcset="@img/sofa-390.png">
-              <source media="(max-width: 768px)" srcset="@img/sofa-768.png">
-              <img class="rating__img" src="@img/sofa-1920.png" alt="изображение кресла велюрового">
-            </picture>
-            </div>
-            <div class="rating__card-content">
-              <h3 class="rating__card-title card-main__title">
-                Диван апартековый &rdquo;T&#8209;75&ldquo;
-              </h3>
-              <div class="rating__card-prices">
-                <p class="rating__card-price">
-                  69&nbsp;990
+            </article>
+          </li>
+          <li class="rating__item">
+            <article class="rating__card  card-main rating__card-2">
+              <div class="rating__card-top-panel">
+              <picture class="rating__card-pic card-main__pic">
+                <source media="(max-width: 320px)" srcset="@img/sofa-390.png">
+                <source media="(max-width: 768px)" srcset="@img/sofa-768.png">
+                <img class="rating__img" src="@img/sofa-1920.png" alt="изображение кресла велюрового">
+              </picture>
+              </div>
+              <div class="rating__card-content">
+                <h3 class="rating__card-title card-main__title">
+                  Диван апартековый &rdquo;T&#8209;75&ldquo;
+                </h3>
+                <div class="rating__card-prices">
+                  <span class="rating__card-price">
+                    69&nbsp;990
+                  </span>
+                </div>
+                <a href="card.html" class="rating__card-btn card-main__btn second-button">
+                  Купить
+                </a>
+              </div>
+              
+              <div class="rating__nameplate card-main__nameplate">
+                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
+                  </svg>
+  
+                <p class="rating__nameplate-text">
+                  4,9
                 </p>
               </div>
-            </div>
-            <a href="card.html" class="rating__card-btn card-main__btn second-button">
-              Купить
-            </a>
-            <div class="rating__nameplate card-main__nameplate">
-              <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
-                </svg>
-
-              <p class="rating__nameplate-text">
-                4,9
-              </p>
-            </div>
-          </div>
-          <div class="rating__card  card-main rating__card-3">
-            <div class="rating__card-top-panel">
-            <picture class="rating__card-pic card-main__pic">
-              <source media="(max-width: 390px)" srcset="@img/fabric-sofa-rating-390.png">
-              <source media="(max-width: 768px)" srcset="@img/fabric-sofa-rating-768.png">
-              <img class="rating__img" src="@img/fabric-sofa-rating-1920.png" alt="изображение кресла велюрового">
-            </picture>
-            </div>
-            <div class="rating__card-content">
-              <h3 class="rating__card-title card-main__title">
-                Диван тканевый <br> &rdquo;D&#8209;31&ldquo;
-              </h3>
-              <div class="rating__card-prices card-main__price">
-                <p class="rating__card-price">
-                  28&nbsp;490
+            </article>
+          </li>
+          <li class="rating__item">
+            <article class="rating__card  card-main rating__card-3">
+              <div class="rating__card-top-panel">
+              <picture class="rating__card-pic card-main__pic">
+                <source media="(max-width: 390px)" srcset="@img/fabric-sofa-rating-390.png">
+                <source media="(max-width: 768px)" srcset="@img/fabric-sofa-rating-768.png">
+                <img class="rating__img" src="@img/fabric-sofa-rating-1920.png" alt="изображение кресла велюрового">
+              </picture>
+              </div>
+              <div class="rating__card-content">
+                <h3 class="rating__card-title card-main__title">
+                  Диван тканевый <br> &rdquo;D&#8209;31&ldquo;
+                </h3>
+                <div class="rating__card-prices card-main__price">
+                  <span class="rating__card-price">
+                    28&nbsp;490
+                  </span>
+                </div>
+                <a href="card.html" class="rating__card-btn card-main__btn second-button">
+                  Купить
+                </a>
+              </div>
+              
+              <div class="rating__nameplate card-main__nameplate">
+                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
+                  </svg>
+  
+                <p class="rating__nameplate-text">
+                  4,8
                 </p>
               </div>
-            </div>
-            <a href="card.html" class="rating__card-btn card-main__btn second-button">
-              Купить
-            </a>
-            <div class="rating__nameplate card-main__nameplate">
-              <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
-                </svg>
-
-              <p class="rating__nameplate-text">
-                4,8
-              </p>
-            </div>
-          </div>
-          <div class="rating__card  card-main rating__card-4">
-            <div class="rating__card-top-panel">
-            <picture class="rating__card-pic">
-              <source media="(max-width: 320px)" srcset="@img/velor-sofa-390.png">
-              <source media="(max-width: 768px)" srcset="@img/velor-sofa-768.png">
-              <img class="rating__img" src="@img/velor-sofa-1920.png" alt="изображение кресла велюрового">
-            </picture>
-            </div>
-            <div class="rating__card-content">
-              <h3 class="rating__card-title card-main__title">
-                Диван велюровый &rdquo;Y&#8209;68&ldquo;
-              </h3>
-              <div class="rating__card-prices card-main__price">
-                <p class="rating__card-price">
-                  22&nbsp;990
+            </article>
+          </li>
+          <li class="rating__item">
+            <article class="rating__card  card-main rating__card-4">
+              <div class="rating__card-top-panel">
+              <picture class="rating__card-pic">
+                <source media="(max-width: 320px)" srcset="@img/velor-sofa-390.png">
+                <source media="(max-width: 768px)" srcset="@img/velor-sofa-768.png">
+                <img class="rating__img" src="@img/velor-sofa-1920.png" alt="изображение кресла велюрового">
+              </picture>
+              </div>
+              <div class="rating__card-content">
+                <h3 class="rating__card-title card-main__title">
+                  Диван велюровый &rdquo;Y&#8209;68&ldquo;
+                </h3>
+                <div class="rating__card-prices card-main__price">
+                  <span class="rating__card-price">
+                    22&nbsp;990
+                  </span>
+                </div>
+                <a href="card.html" class="rating__card-btn card-main__btn second-button">
+                  Купить
+                </a>
+              </div>
+             
+              <div class="rating__nameplate card-main__nameplate">
+                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
+                  </svg>
+  
+                <p class="rating__nameplate-text">
+                  4,8
                 </p>
               </div>
-            </div>
-            <a href="card.html" class="rating__card-btn card-main__btn second-button">
-              Купить
-            </a>
-            <div class="rating__nameplate card-main__nameplate">
-              <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
-                </svg>
-
-              <p class="rating__nameplate-text">
-                4,8
-              </p>
-            </div>
-          </div>
-          <div class="rating__card  card-main rating__card-5">
-            <div class="rating__card-top-panel">
-            <picture class="rating__card-pic">
-              <source media="(max-width: 320px)" srcset="@img/shinil-sofa-390.png">
-              <source media="(max-width: 768px)" srcset="@img/shinil-sofa-768.png">
-              <img class="rating__img" src="@img/shinil-sofa-1920.png" alt="изображение кресла велюрового">
-            </picture>
-            </div>
-            <div class="rating__card-content">
-              <h3 class="rating__card-title card-main__title">
-                Диван из&nbsp;шинила &rdquo;W&#8209;95&ldquo;
-              </h3>
-              <div class="rating__card-prices card-main__price">
-                <p class="rating__card-price">
-                  22&nbsp;990
+            </article>
+          </li>
+          <li class="rating__item">
+            <article class="rating__card  card-main rating__card-5">
+              <div class="rating__card-top-panel">
+              <picture class="rating__card-pic">
+                <source media="(max-width: 320px)" srcset="@img/shinil-sofa-390.png">
+                <source media="(max-width: 768px)" srcset="@img/shinil-sofa-768.png">
+                <img class="rating__img" src="@img/shinil-sofa-1920.png" alt="изображение кресла велюрового">
+              </picture>
+              </div>
+              <div class="rating__card-content">
+                <h3 class="rating__card-title card-main__title">
+                  Диван из&nbsp;шинила &rdquo;W&#8209;95&ldquo;
+                </h3>
+                <div class="rating__card-prices card-main__price">
+                  <span class="rating__card-price">
+                    22&nbsp;990
+                  </span>
+                </div>
+                <a href="card.html" class="rating__card-btn card-main__btn second-button">
+                  Купить
+                </a>
+              </div>
+              
+              <div class="rating__nameplate card-main__nameplate">
+                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
+                  </svg>
+  
+                <p class="rating__nameplate-text">
+                  4,8
                 </p>
               </div>
-            </div>
-            <a href="card.html" class="rating__card-btn card-main__btn second-button">
-              Купить
-            </a>
-            <div class="rating__nameplate card-main__nameplate">
-              <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
-                </svg>
-
-              <p class="rating__nameplate-text">
-                4,8
-              </p>
-            </div>
-          </div>
-          <div class="rating__card  card-main rating__card-6">
-            <div class="rating__card-top-panel">
-            <picture class="rating__card-pic">
-              <source media="(max-width: 320px)" srcset="@img/sofa-flock-390.png">
-              <source media="(max-width: 768px)" srcset="@img/sofa-flock-768.png">
-              <img class="rating__img" src="@img/sofa-flock-1920.png" alt="изображение кресла велюрового">
-            </picture>
-            </div>
-            <div class="rating__card-content">
-              <h3 class="rating__card-title card-main__title">
-                Диван флоковый &rdquo;G&#8209;41&ldquo;
-              </h3>
-              <div class="rating__card-prices card-main__price">
-                <p class="rating__card-price">
-                  17&nbsp;990
+            </article>
+          </li>
+          <li class="rating__item">
+            <article class="rating__card  card-main rating__card-6">
+              <div class="rating__card-top-panel">
+              <picture class="rating__card-pic">
+                <source media="(max-width: 320px)" srcset="@img/sofa-flock-390.png">
+                <source media="(max-width: 768px)" srcset="@img/sofa-flock-768.png">
+                <img class="rating__img" src="@img/sofa-flock-1920.png" alt="изображение кресла велюрового">
+              </picture>
+              </div>
+              <div class="rating__card-content">
+                <h3 class="rating__card-title card-main__title">
+                  Диван флоковый &rdquo;G&#8209;41&ldquo;
+                </h3>
+                <div class="rating__card-prices card-main__price">
+                  <span class="rating__card-price">
+                    17&nbsp;990
+                  </span>
+                </div>
+                <a href="card.html" class="rating__card-btn card-main__btn second-button">
+                  Купить
+                </a>
+              </div>
+             
+              <div class="rating__nameplate card-main__nameplate">
+                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
+                  </svg>
+  
+                <p class="rating__nameplate-text">
+                  4,8
                 </p>
               </div>
-            </div>
-            <a href="card.html" class="rating__card-btn card-main__btn second-button">
-              Купить
-            </a>
-            <div class="rating__nameplate card-main__nameplate">
-              <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
-                </svg>
-
-              <p class="rating__nameplate-text">
-                4,8
-              </p>
-            </div>
-          </div>
-          <div class="rating__card  card-main rating__card-7">
-            <div class="rating__card-top-panel">
-            <picture class="rating__card-pic">
-              <img class="rating__img" src="@img/shinil-sofa-v43-1920.png" alt="изображение кресла велюрового">
-            </picture>
-            </div>
-            <div class="rating__card-content">
-              <h3 class="rating__card-title card-main__title">
-                Диван шиниловый &rdquo;V-43&ldquo;
-              </h3>
-              <div class="rating__card-prices card-main__price">
-                <p class="rating__card-price">
-                  19&nbsp;990
+            </article>
+          </li>
+          <li class="rating__item">
+            <article class="rating__card  card-main rating__card-7">
+              <div class="rating__card-top-panel">
+              <picture class="rating__card-pic">
+                <img class="rating__img" src="@img/shinil-sofa-v43-1920.png" alt="изображение кресла велюрового">
+              </picture>
+              </div>
+              <div class="rating__card-content">
+                <h3 class="rating__card-title card-main__title">
+                  Диван шиниловый &rdquo;V-43&ldquo;
+                </h3>
+                <div class="rating__card-prices card-main__price">
+                  <span class="rating__card-price">
+                    19&nbsp;990
+                  </span>
+                </div>
+                <a href="card.html" class="rating__card-btn card-main__btn second-button">
+                  Купить
+                </a>
+              </div>
+              
+              <div class="rating__nameplate card-main__nameplate">
+                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
+                  </svg>
+  
+                <p class="rating__nameplate-text">
+                  4,8
                 </p>
               </div>
-            </div>
-            <a href="card.html" class="rating__card-btn card-main__btn second-button">
-              Купить
-            </a>
-            <div class="rating__nameplate card-main__nameplate">
-              <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
-                </svg>
-
-              <p class="rating__nameplate-text">
-                4,8
-              </p>
-            </div>
-          </div>
-          <div class="rating__card  card-main rating__card-8">
-            <div class="rating__card-top-panel">
-            <picture class="rating__card-pic">
-              <img class="rating__img" src="@img/velor-sofa-s99-1920.png" alt="изображение кресла велюрового">
-            </picture>
-            </div>
-            <div class="rating__card-content">
-              <h3 class="rating__card-title card-main__title">
-                Диван велюровый &rdquo;S-99&ldquo;
-              </h3>
-              <div class="rating__card-prices card-main__price">
-                <p class="rating__card-price">
-                  19&nbsp;990
+            </article>
+          </li>
+          <li class="rating__item">
+            <article class="rating__card  card-main rating__card-8">
+              <div class="rating__card-top-panel">
+              <picture class="rating__card-pic">
+                <img class="rating__img" src="@img/velor-sofa-s99-1920.png" alt="изображение кресла велюрового">
+              </picture>
+              </div>
+              <div class="rating__card-content">
+                <h3 class="rating__card-title card-main__title">
+                  Диван велюровый &rdquo;S-99&ldquo;
+                </h3>
+                <div class="rating__card-prices card-main__price">
+                  <span class="rating__card-price">
+                    19&nbsp;990
+                  </span>
+                </div>
+                <a href="card.html" class="rating__card-btn card-main__btn second-button">
+                  Купить
+                </a>
+              </div>
+             
+              <div class="rating__nameplate card-main__nameplate">
+                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
+                  </svg>
+  
+                <p class="rating__nameplate-text">
+                  4,7
                 </p>
               </div>
-            </div>
-            <a href="card.html" class="rating__card-btn card-main__btn second-button">
-              Купить
-            </a>
-            <div class="rating__nameplate card-main__nameplate">
-              <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
-                </svg>
-
-              <p class="rating__nameplate-text">
-                4,7
-              </p>
-            </div>
-          </div>
-        </div>
+            </article>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="banner">
@@ -576,221 +618,231 @@
         <h2 class="categories__title second-title">
           Топ категории
         </h2>
-        <div class="categories__card-area grid">
-          <div class="categories__card categories__card-1">
-            <ul class="categories__card-list categories__card-list-first">
-              <li class="categories__card-filters-item">
-                <a href="#" class="categories__card-filter-link">
-                  Прямые
+          <ul class="categories__list categories__card-area grid">
+            <li class="categories__item categories__item-card-1">
+              <article class="categories__card categories__card-1">
+                <ul class="categories__card-list categories__card-list-first">
+                  <li class="categories__card-filters-item">
+                    <a href="#" class="categories__card-filter-link">
+                      Прямые
+                    </a>
+                  </li>
+                  <li class="categories__card-filters-item">
+                    <a href="#" class="categories__card-filter-link">
+                      Угловые
+                    </a>
+                  </li>
+                  <li class="categories__card-filters-item">
+                    <a href="#" class="categories__card-filter-link">
+                      Модульные
+                    </a>
+                  </li>
+                </ul>
+                <h3 class="categories__card-title">
+                  Диваны
+                </h3>
+                <a class="categories__card-link-mob" href="catalog.html">
+                  <h3 class="categories__card-title categories__card-link-title categories__card-link-title-first">
+                    Диваны
+                  </h3>
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="15" fill="white" stroke="#A65CF0" stroke-width="2"/>
+                    <path d="M14 11L19 16L14 21" stroke="#A65CF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                 </a>
-              </li>
-              <li class="categories__card-filters-item">
-                <a href="#" class="categories__card-filter-link">
-                  Угловые
+                <picture class="categories__card-pic">
+                  <source media="(max-width: 390px)" srcset="@img/Sofas-390.png">
+                  <source media="(max-width: 768px)" srcset="@img/Sofas-768.png">
+                  <source media="(max-width: 1024px)" srcset="@img/Sofas-1024.png">
+                  <img class="categories__card-img" src="@img/Sofas-1920.png" alt="Изображение дивана">
+                </picture>
+                <a href="catalog.html" class="categories__card-link">
+                  <span class="categories__card-link-text">
+                  В каталог
+                  </span>
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="15" fill="white" stroke="#A65CF0" stroke-width="2"/>
+                    <path d="M14 11L19 16L14 21" stroke="#A65CF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+    
                 </a>
-              </li>
-              <li class="categories__card-filters-item">
-                <a href="#" class="categories__card-filter-link">
-                  Модульные
+              </article>
+            </li>
+            <li class="categories__item categories__item-card-2">
+              <article class="categories__card categories__card-2">
+                <ul class="categories__card-list">
+                  <li class="categories__card-filters-item">
+                    <a href="#" class="categories__card-filter-link">
+                      Мягкие
+                    </a>
+                  </li>
+                  <li class="categories__card-filters-item">
+                    <a href="#" class="categories__card-filter-link">
+                      Кресла-кровати
+                    </a>
+                  </li>
+                </ul>
+                <a class="categories__card-link-mob" href="catalog.html">
+                  <h3 class="categories__card-title categories__card-link-title">
+                    Кресла
+                  </h3>
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="15" fill="white" stroke="#A65CF0" stroke-width="2"/>
+                    <path d="M14 11L19 16L14 21" stroke="#A65CF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                 </a>
-              </li>
-            </ul>
-            <h3 class="categories__card-title">
-              Диваны
-            </h3>
-            <a class="categories__card-link-mob" href="catalog.html">
-              <h3 class="categories__card-title categories__card-link-title categories__card-link-title-first">
-                Диваны
-              </h3>
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="16" cy="16" r="15" fill="white" stroke="#A65CF0" stroke-width="2"/>
-                <path d="M14 11L19 16L14 21" stroke="#A65CF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </a>
-            <picture class="categories__card-pic">
-              <source media="(max-width: 390px)" srcset="@img/Sofas-390.png">
-              <source media="(max-width: 768px)" srcset="@img/Sofas-768.png">
-              <source media="(max-width: 1024px)" srcset="@img/Sofas-1024.png">
-              <img class="categories__card-img" src="@img/Sofas-1920.png" alt="Изображение дивана">
-            </picture>
-            <a href="catalog.html" class="categories__card-link">
-              <span class="categories__card-link-text">
-              В каталог
-              </span>
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="16" cy="16" r="15" fill="white" stroke="#A65CF0" stroke-width="2"/>
-                <path d="M14 11L19 16L14 21" stroke="#A65CF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-
-            </a>
-          </div>
-          <div class="categories__card categories__card-2">
-            <ul class="categories__card-list">
-              <li class="categories__card-filters-item">
-                <a href="#" class="categories__card-filter-link">
-                  Мягкие
+                <h3 class="categories__card-title">
+                  Кресла
+                </h3>
+                <picture class="categories__card-pic">
+                  <source media="(max-width: 390px)" srcset="@img/armchairs-390.png">
+                  <source media="(max-width: 768px)" srcset="@img/armchairs-768.png">
+                  <source media="(max-width: 1024px)" srcset="@img/armchairs-1024.png">
+                  <img class="categories__card-img" src="@img/armchairs-1920.png" alt="Изображение кресла">
+                </picture>
+                <a href="catalog.html" class="categories__card-link">
+                  <span class="categories__card-link-text">
+                  В каталог
+                  </span>
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="15" fill="white" stroke="#A65CF0" stroke-width="2"/>
+                    <path d="M14 11L19 16L14 21" stroke="#A65CF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                 </a>
-              </li>
-              <li class="categories__card-filters-item">
-                <a href="#" class="categories__card-filter-link">
-                  Кресла-кровати
+              </article>
+            </li>
+            <li class="categories__item categories__item-card-3">
+              <article class="categories__card categories__card-3">
+                <ul class="categories__card-list">
+                  <li class="categories__card-filters-item">
+                    <a href="#" class="categories__card-filter-link">
+                      Односпальные
+                    </a>
+                  </li>
+                  <li class="categories__card-filters-item">
+                    <a href="#" class="categories__card-filter-link">
+                      Двуспальные
+                    </a>
+                  </li>
+                </ul>
+                <a class="categories__card-link-mob" href="catalog.html">
+                  <h3 class="categories__card-title categories__card-link-title">
+                    Кровати
+                  </h3>
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="15" fill="white" stroke="#A65CF0" stroke-width="2"/>
+                    <path d="M14 11L19 16L14 21" stroke="#A65CF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                 </a>
-              </li>
-            </ul>
-            <a class="categories__card-link-mob" href="catalog.html">
-              <h3 class="categories__card-title categories__card-link-title">
-                Кресла
-              </h3>
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="16" cy="16" r="15" fill="white" stroke="#A65CF0" stroke-width="2"/>
-                <path d="M14 11L19 16L14 21" stroke="#A65CF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </a>
-            <h3 class="categories__card-title">
-              Кресла
-            </h3>
-            <picture class="categories__card-pic">
-              <source media="(max-width: 390px)" srcset="@img/armchairs-390.png">
-              <source media="(max-width: 768px)" srcset="@img/armchairs-768.png">
-              <source media="(max-width: 1024px)" srcset="@img/armchairs-1024.png">
-              <img class="categories__card-img" src="@img/armchairs-1920.png" alt="Изображение кресла">
-            </picture>
-            <a href="catalog.html" class="categories__card-link">
-              <span class="categories__card-link-text">
-              В каталог
-              </span>
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="16" cy="16" r="15" fill="white" stroke="#A65CF0" stroke-width="2"/>
-                <path d="M14 11L19 16L14 21" stroke="#A65CF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </a>
-          </div>
-          <div class="categories__card categories__card-3">
-            <ul class="categories__card-list">
-              <li class="categories__card-filters-item">
-                <a href="#" class="categories__card-filter-link">
-                  Односпальные
+                <h3 class="categories__card-title">
+                  Кровати
+                </h3>
+                <picture class="categories__card-pic">
+                  <source media="(max-width: 320px)" srcset="@img/beds-390.png">
+                  <source media="(max-width: 768px)" srcset="@img/beds-768.png">
+                  <source media="(max-width: 1024px)" srcset="@img/beds-1024.png">
+                  <img class="categories__card-img" src="@img/beds-1920.png" alt="Изображение кровати">
+                </picture>
+                <a href="catalog.html" class="categories__card-link">
+                  <span class="categories__card-link-text">
+                  В каталог
+                  </span>
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="15" fill="white" stroke="#A65CF0" stroke-width="2"/>
+                    <path d="M14 11L19 16L14 21" stroke="#A65CF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+    
                 </a>
-              </li>
-              <li class="categories__card-filters-item">
-                <a href="#" class="categories__card-filter-link">
-                  Двуспальные
+              </article>
+            </li>
+            <li class="categories__item categories__item-card-4">
+              <article class="categories__card categories__card-4">
+                <ul class="categories__card-list">
+                  <li class="categories__card-filters-item">
+                    <a href="#" class="categories__card-filter-link">
+                      Тумбы
+                    </a>
+                  </li>
+                  <li class="categories__card-filters-item">
+                    <a href="#" class="categories__card-filter-link">
+                      Комоды
+                    </a>
+                  </li>
+                </ul>
+                <a class="categories__card-link-mob" href="catalog.html">
+                  <h3 class="categories__card-title categories__card-link-title">
+                    Тумбы и&nbsp;комоды
+                  </h3>
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="15" fill="white" stroke="#A65CF0" stroke-width="2"/>
+                    <path d="M14 11L19 16L14 21" stroke="#A65CF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                 </a>
-              </li>
-            </ul>
-            <a class="categories__card-link-mob" href="catalog.html">
-              <h3 class="categories__card-title categories__card-link-title">
-                Кровати
-              </h3>
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="16" cy="16" r="15" fill="white" stroke="#A65CF0" stroke-width="2"/>
-                <path d="M14 11L19 16L14 21" stroke="#A65CF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </a>
-            <h3 class="categories__card-title">
-              Кровати
-            </h3>
-            <picture class="categories__card-pic">
-              <source media="(max-width: 320px)" srcset="@img/beds-390.png">
-              <source media="(max-width: 768px)" srcset="@img/beds-768.png">
-              <source media="(max-width: 1024px)" srcset="@img/beds-1024.png">
-              <img class="categories__card-img" src="@img/beds-1920.png" alt="Изображение кровати">
-            </picture>
-            <a href="catalog.html" class="categories__card-link">
-              <span class="categories__card-link-text">
-              В каталог
-              </span>
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="16" cy="16" r="15" fill="white" stroke="#A65CF0" stroke-width="2"/>
-                <path d="M14 11L19 16L14 21" stroke="#A65CF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-
-            </a>
-          </div>
-          <div class="categories__card categories__card-4">
-            <ul class="categories__card-list">
-              <li class="categories__card-filters-item">
-                <a href="#" class="categories__card-filter-link">
-                  Тумбы
+                <h3 class="categories__card-title">
+                  Тумбы и&nbsp;комоды
+                </h3>
+                <picture class="categories__card-pic">
+                  <source media="(max-width: 320px)" srcset="@img/cabinets-390.png">
+                  <source media="(max-width: 768px)" srcset="@img/cabinets-768.png">
+                  <source media="(max-width: 1024px)" srcset="@img/cabinets-1024.png">
+                  <img class="categories__card-img" src="@img/cabinets-1920.png" alt="Изображение камода и тумбы">
+                </picture>
+                <a href="catalog.html" class="categories__card-link">
+                  <span class="categories__card-link-text">
+                  В каталог
+                  </span>
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="15" fill="white" stroke="#A65CF0" stroke-width="2"/>
+                    <path d="M14 11L19 16L14 21" stroke="#A65CF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+    
                 </a>
-              </li>
-              <li class="categories__card-filters-item">
-                <a href="#" class="categories__card-filter-link">
-                  Комоды
+              </article>
+            </li>
+            <li class="categories__item categories__item-card-5">
+              <article class="categories__card categories__card-5">
+                <ul class="categories__card-list">
+                  <li class="categories__card-filters-item">
+                    <a href="#" class="categories__card-filter-link">
+                      Деревянные
+                    </a>
+                  </li>
+                  <li class="categories__card-filters-item">
+                    <a href="#" class="categories__card-filter-link">
+                      Металлокаркас
+                    </a>
+                  </li>
+                </ul>
+                <a class="categories__card-link-mob" href="catalog.html">
+                  <h3 class="categories__card-title categories__card-link-title ">
+                    Стулья
+                  </h3>
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="15" fill="white" stroke="#A65CF0" stroke-width="2"/>
+                    <path d="M14 11L19 16L14 21" stroke="#A65CF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                 </a>
-              </li>
-            </ul>
-            <a class="categories__card-link-mob" href="catalog.html">
-              <h3 class="categories__card-title categories__card-link-title">
-                Тумбы и&nbsp;комоды
-              </h3>
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="16" cy="16" r="15" fill="white" stroke="#A65CF0" stroke-width="2"/>
-                <path d="M14 11L19 16L14 21" stroke="#A65CF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </a>
-            <h3 class="categories__card-title">
-              Тумбы и&nbsp;комоды
-            </h3>
-            <picture class="categories__card-pic">
-              <source media="(max-width: 320px)" srcset="@img/cabinets-390.png">
-              <source media="(max-width: 768px)" srcset="@img/cabinets-768.png">
-              <source media="(max-width: 1024px)" srcset="@img/cabinets-1024.png">
-              <img class="categories__card-img" src="@img/cabinets-1920.png" alt="Изображение камода и тумбы">
-            </picture>
-            <a href="catalog.html" class="categories__card-link">
-              <span class="categories__card-link-text">
-              В каталог
-              </span>
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="16" cy="16" r="15" fill="white" stroke="#A65CF0" stroke-width="2"/>
-                <path d="M14 11L19 16L14 21" stroke="#A65CF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-
-            </a>
-          </div>
-          <div class="categories__card categories__card-5">
-            <ul class="categories__card-list">
-              <li class="categories__card-filters-item">
-                <a href="#" class="categories__card-filter-link">
-                  Деревянные
+                <h3 class="categories__card-title">
+                  Стулья
+                </h3>
+                <picture class="categories__card-pic">
+                  <source media="(max-width: 320px)" srcset="@img/chairs-390.png">
+                  <source media="(max-width: 768px)" srcset="@img/chairs-768.png">
+                  <source media="(max-width: 1024px)" srcset="@img/chairs-1024.png">
+                  <img class="categories__card-img" src="@img/chairs-1920.png" alt="Изображение стула">
+                </picture>
+                <a href="catalog.html" class="categories__card-link">
+                  <span class="categories__card-link-text">
+                  В каталог
+                  </span>
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="15" fill="white" stroke="#A65CF0" stroke-width="2"/>
+                    <path d="M14 11L19 16L14 21" stroke="#A65CF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                 </a>
-              </li>
-              <li class="categories__card-filters-item">
-                <a href="#" class="categories__card-filter-link">
-                  Металлокаркас
-                </a>
-              </li>
-            </ul>
-            <a class="categories__card-link-mob" href="catalog.html">
-              <h3 class="categories__card-title categories__card-link-title ">
-                Стулья
-              </h3>
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="16" cy="16" r="15" fill="white" stroke="#A65CF0" stroke-width="2"/>
-                <path d="M14 11L19 16L14 21" stroke="#A65CF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </a>
-            <h3 class="categories__card-title">
-              Стулья
-            </h3>
-            <picture class="categories__card-pic">
-              <source media="(max-width: 320px)" srcset="@img/chairs-390.png">
-              <source media="(max-width: 768px)" srcset="@img/chairs-768.png">
-              <source media="(max-width: 1024px)" srcset="@img/chairs-1024.png">
-              <img class="categories__card-img" src="@img/chairs-1920.png" alt="Изображение стула">
-            </picture>
-            <a href="catalog.html" class="categories__card-link">
-              <span class="categories__card-link-text">
-              В каталог
-              </span>
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="16" cy="16" r="15" fill="white" stroke="#A65CF0" stroke-width="2"/>
-                <path d="M14 11L19 16L14 21" stroke="#A65CF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </a>
-          </div>
-        </div>
+              </article>
+            </li>
+          </ul>
       </div>
     </section>
     <section class="useful">
@@ -798,72 +850,92 @@
         <h2 class="second-title useful__title">
           Полезное
         </h2>
-        <div class="useful__card-area grid">
-          <div class="useful__card useful__card-1">
-            <picture class="useful__card-pic">
-              <source media="(max-width: 768px)" srcset="@img/useful-1-992.png">
-              <source media="(max-width: 992px)" srcset="@img/useful-1-1920.png">
-              <source media="(max-width: 1024px)" srcset="@img/useful-1-1024.png">
-              <img class="useful__card-img" src="@img/useful-1-1920.png" alt="Изображение интерьера">
-            </picture>
-            <p class="useful__card-descr">
-              И&nbsp;нет сомнений, что сделанные на&nbsp;базе интернет&#8209;аналитики выводы представляют собой не&nbsp;что иное?
-            </p>
-            <button class="second-button useful__card-btn">
-              Читать
-            </button>
-          </div>
-          <div class="useful__card useful__card-2">
-            <picture class="useful__card-pic">
-              <source media="(max-width: 768px)" srcset="@img/useful-2-992.png">
-              <source media="(max-width: 992px)" srcset="@img/useful-2-1920.png">
-              <source media="(max-width: 1024px)" srcset="@img/useful-2-1920.png">
-              <img class="useful__card-img" src="@img/useful-2-1920.png" alt="Изображение интерьера, описание чего-то полезного">
-            </picture>
-            <p class="useful__card-descr">
-              Как принято считать, некоторые особенности приносят несомненную пользу обществу?
-            </p>
-            <button class="second-button useful__card-btn">
-              Читать
-            </button>
-          </div>
-          <div class="useful__card useful__card-3">
-            <picture class="useful__card-pic">
-              <source media="(max-width: 1024px)" srcset="@img/useful-3-1024.png">
-              <img class="useful__card-img" src="@img/useful-2-1920.png" alt="Изображение интерьера, описание чего-то полезного">
-            </picture>
-            <p class="useful__card-descr">
-              Ясность нашей позиции очевидна: укрепление&nbsp;и развитие внутренней структуры?
-            </p>
-            <button class="second-button useful__card-btn">
-              Читать
-            </button>
-          </div>
-          <div class="useful__card useful__card-4">
-            <picture class="useful__card-pic">
-              <source media="(max-width: 1024px)" srcset="@img/useful-4-390.png">
-              <img class="useful__card-img" src="@img/useful-4-390.png" alt="Изображение интерьера, описание чего-то полезного">
-            </picture>
-            <p class="useful__card-descr">
-              Прежде всего, консультация с широким активом однозначно фиксирует необходимость распределения?
-            </p>
-            <button class="second-button useful__card-btn">
-              Читать
-            </button>
-          </div>
-          <div class="useful__card useful__card-5">
-            <picture class="useful__card-pic">
-              <source media="(max-width: 1024px)" srcset="@img/useful-5-390.png">
-              <img class="useful__card-img" src="@img/useful-5-390.png" alt="Изображение интерьера, описание чего-то полезного">
-            </picture>
-            <p class="useful__card-descr">
-              Как принято считать, некоторые особенности приносят несомненную пользу обществу?
-            </p>
-            <button class="second-button useful__card-btn">
-              Читать
-            </button>
-          </div>
-        </div>
+        <ul class="useful__list useful__card-area grid">
+          <li class="useful__item useful__item-card-1">
+            <article class="useful__card">
+              <picture class="useful__card-pic">
+                <source media="(max-width: 768px)" srcset="@img/useful-1-992.png">
+                <source media="(max-width: 992px)" srcset="@img/useful-1-1920.png">
+                <source media="(max-width: 1024px)" srcset="@img/useful-1-1024.png">
+                <img class="useful__card-img" src="@img/useful-1-1920.png" alt="Изображение интерьера">
+              </picture>
+              <div class="useful__card-content">
+                <p class="useful__card-descr">
+                  И&nbsp;нет сомнений, что сделанные на&nbsp;базе интернет&#8209;аналитики выводы представляют собой не&nbsp;что иное?
+                </p>
+                <button class="second-button useful__card-btn">
+                  Читать
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="useful__item useful__item-card-2">
+            <article class="useful__card useful__card-2">
+              <picture class="useful__card-pic">
+                <source media="(max-width: 768px)" srcset="@img/useful-2-992.png">
+                <source media="(max-width: 992px)" srcset="@img/useful-2-1920.png">
+                <source media="(max-width: 1024px)" srcset="@img/useful-2-1920.png">
+                <img class="useful__card-img" src="@img/useful-2-1920.png" alt="Изображение интерьера, описание чего-то полезного">
+              </picture>
+              <div class="useful__card-content">
+              <p class="useful__card-descr">
+                Как принято считать, некоторые особенности приносят несомненную пользу обществу?
+              </p>
+              <button class="second-button useful__card-btn">
+                Читать
+              </button>
+              </div>
+            </article>
+          </li>
+          <li class="useful__item useful__item-card-3">
+            <article class="useful__card useful__card-3">
+              <picture class="useful__card-pic">
+                <source media="(max-width: 1024px)" srcset="@img/useful-3-1024.png">
+                <img class="useful__card-img" src="@img/useful-2-1920.png" alt="Изображение интерьера, описание чего-то полезного">
+              </picture>
+              <div class="useful__card-content">
+              <p class="useful__card-descr">
+                Ясность нашей позиции очевидна: укрепление&nbsp;и развитие внутренней структуры?
+              </p>
+              <button class="second-button useful__card-btn">
+                Читать
+              </button>
+              </div>
+            </article>
+          </li>
+          <li class="useful__item useful__item-card-4">
+            <article class="useful__card useful__card-4">
+              <picture class="useful__card-pic">
+                <source media="(max-width: 1024px)" srcset="@img/useful-4-390.png">
+                <img class="useful__card-img" src="@img/useful-4-390.png" alt="Изображение интерьера, описание чего-то полезного">
+              </picture>
+              <div class="useful__card-content">
+              <p class="useful__card-descr">
+                Прежде всего, консультация с широким активом однозначно фиксирует необходимость распределения?
+              </p>
+              <button class="second-button useful__card-btn">
+                Читать
+              </button>
+              </div>
+            </article>
+          </li>
+          <li class="useful__item useful__item-card-5">
+            <article class="useful__card useful__card-5">
+              <picture class="useful__card-pic">
+                <source media="(max-width: 1024px)" srcset="@img/useful-5-390.png">
+                <img class="useful__card-img" src="@img/useful-5-390.png" alt="Изображение интерьера, описание чего-то полезного">
+              </picture>
+              <div class="useful__card-content">
+              <p class="useful__card-descr">
+                Как принято считать, некоторые особенности приносят несомненную пользу обществу?
+              </p>
+              <button class="second-button useful__card-btn">
+                Читать
+              </button>
+              </div>
+            </article>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="feedback">
@@ -917,7 +989,7 @@
       <div class="container footer__container grid">
         <div class="footer__left-panel">
           <a class="footer__logo-link" href="#" aria-label="Логотип компании СитДаунПлиз переход на главную страницу">
-            <img src="@img/logo-1920.png" alt="Логотип копании СитДаунПлиз">
+            <img class="footer__logo-img" src="@img/logo-1920.png" alt="Логотип копании СитДаунПлиз">
           </a>
           <div class="footer__social-link-container">
             <a href="№" class="footer__social-link odnoklassniki" aria-label="Переход в сообщество компании СитДаунПлиз в социальной сети Одноклассники">

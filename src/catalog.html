@@ -46,7 +46,7 @@
       </nav>
       <div class="header__logo">
         <a class="header__logo-link" href="index.html">
-          <img src="@img/logo-1920.png" alt="Логотип компании СитДаунПлиз">
+          <img class="header__logo-img" src="@img/logo-1920.png" alt="Логотип компании СитДаунПлиз">
         </a>
       </div>
       <nav class="header__main-nav">
@@ -150,7 +150,7 @@
     </div>
   </header>
   <main class="container catalog-cont grid">
-    <h1 class="catalog__title second-title title-mob-catalog">
+    <h1 class="catalog-cont__title second-title title-mob-catalog">
       Каталог
     </h1>
     <aside class="filter-block">
@@ -292,284 +292,308 @@
           <div class="swiper-wrapper catalog__swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide catalog__swiper-slide">
-
-             <div class="catalog__card-area">
-              <div class="catalog__card-area grid">
-                <div class="catalog__card  card-main catalog__card-1">
-                  <div class="catalog__card-top-panel">
-                  <picture class="catalog__card-pic card-main__pic">
-                    <source media="(max-width: 390px)" srcset="@img/sofa-leather-390.png">
-                    <source media="(max-width: 768px)" srcset="@img/sofa-leather-768.png">
-                    <img class="catalog__img" src="@img/sofa-leather-1920.png" alt="изображение кресла велюрового">
-                  </picture>
-                  </div>
-                  <div class="catalog__card-content">
-                    <h3 class="catalog__card-title card-main__title">
-                      Диван кожаный &rdquo;R&#8209;94&ldquo;
-                    </h3>
-                    <div class="catalog__card-prices card-main__price">
-                      <p class="catalog__card-price">
-                        94&nbsp;990
+              <ul class="catalog__list catalog__card-area grid">
+                <li class="catalog__item catalog__item-1">
+                  <article class="catalog__card  card-main catalog__card-1">
+                    <div class="catalog__card-top-panel">
+                    <picture class="catalog__card-pic card-main__pic">
+                      <source media="(max-width: 390px)" srcset="@img/sofa-leather-390.png">
+                      <source media="(max-width: 768px)" srcset="@img/sofa-leather-768.png">
+                      <img class="catalog__img" src="@img/sofa-leather-1920.png" alt="изображение кресла велюрового">
+                    </picture>
+                    </div>
+                    <div class="catalog__card-content">
+                      <h3 class="catalog__card-title card-main__title">
+                        Диван кожаный &rdquo;R&#8209;94&ldquo;
+                      </h3>
+                      <div class="catalog__card-prices card-main__price">
+                        <span class="catalog__card-price">
+                          94&nbsp;990
+                        </span>
+                      </div>
+                      <button class="catalog__card-btn card-main__btn second-button">
+                        Купить
+                      </button>
+                    </div>
+                    
+                    <div class="catalog__nameplate card-main__nameplate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
+                        </svg>
+  
+                      <p class="catalog__nameplate-text">
+                        5,0
                       </p>
                     </div>
-                  </div>
-                  <button class="catalog__card-btn card-main__btn second-button">
-                    Купить
-                  </button>
-                  <div class="catalog__nameplate card-main__nameplate">
-                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
-                      </svg>
-
-                    <p class="catalog__nameplate-text">
-                      5,0
-                    </p>
-                  </div>
-                </div>
-                <div class="catalog__card  card-main catalog__card-2">
-                  <div class="catalog__card-top-panel">
-                  <picture class="catalog__card-pic card-main__pic">
-                    <source media="(max-width: 320px)" srcset="@img/sofa-390.png">
-                    <source media="(max-width: 768px)" srcset="@img/sofa-768.png">
-                    <img class="catalog__img" src="@img/sofa-1920.png" alt="изображение кресла велюрового">
-                  </picture>
-                  </div>
-                  <div class="catalog__card-content">
-                    <h3 class="catalog__card-title card-main__title">
-                      Диван апартековый &rdquo;T&#8209;75&ldquo;
-                    </h3>
-                    <div class="catalog__card-prices">
-                      <p class="catalog__card-price">
-                        69&nbsp;990
+                  </article>
+                </li>
+                <li class="catalog__item catalog__item-2">
+                  <article class="catalog__card  card-main catalog__card-2">
+                    <div class="catalog__card-top-panel">
+                    <picture class="catalog__card-pic card-main__pic">
+                      <source media="(max-width: 320px)" srcset="@img/sofa-390.png">
+                      <source media="(max-width: 768px)" srcset="@img/sofa-768.png">
+                      <img class="catalog__img" src="@img/sofa-1920.png" alt="изображение кресла велюрового">
+                    </picture>
+                    </div>
+                    <div class="catalog__card-content">
+                      <h3 class="catalog__card-title card-main__title">
+                        Диван апартековый &rdquo;T&#8209;75&ldquo;
+                      </h3>
+                      <div class="catalog__card-prices">
+                        <span class="catalog__card-price">
+                          69&nbsp;990
+                        </span>
+                      </div>
+                      <button class="catalog__card-btn card-main__btn second-button">
+                        Купить
+                      </button>
+                    </div>
+                    
+                    <div class="catalog__nameplate card-main__nameplate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
+                        </svg>
+  
+                      <p class="catalog__nameplate-text">
+                        4,9
                       </p>
                     </div>
-                  </div>
-                  <button class="catalog__card-btn card-main__btn second-button">
-                    Купить
-                  </button>
-                  <div class="catalog__nameplate card-main__nameplate">
-                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
-                      </svg>
-
-                    <p class="catalog__nameplate-text">
-                      4,9
-                    </p>
-                  </div>
-                </div>
-                <div class="catalog__card  card-main catalog__card-3">
-                  <div class="catalog__card-top-panel">
-                  <picture class="catalog__card-pic card-main__pic">
-                    <source media="(max-width: 390px)" srcset="@img/fabric-sofa-catalog-390.png">
-                    <source media="(max-width: 768px)" srcset="@img/fabric-sofa-catalog-768.png">
-                    <img class="catalog__img" src="@img/fabric-sofa-catalog-1920.png" alt="изображение кресла велюрового">
-                  </picture>
-                  </div>
-                  <div class="catalog__card-content">
-                    <h3 class="catalog__card-title card-main__title">
-                      Диван тканевый <br> &rdquo;D&#8209;31&ldquo;
-                    </h3>
-                    <div class="catalog__card-prices card-main__price">
-                      <p class="catalog__card-price">
-                        28&nbsp;490
+                  </article>
+                </li>
+                <li class="catalog__item catalog__item-3">
+                  <article class="catalog__card  card-main catalog__card-3">
+                    <div class="catalog__card-top-panel">
+                    <picture class="catalog__card-pic card-main__pic">
+                      <source media="(max-width: 390px)" srcset="@img/fabric-sofa-catalog-390.png">
+                      <source media="(max-width: 768px)" srcset="@img/fabric-sofa-catalog-768.png">
+                      <img class="catalog__img" src="@img/fabric-sofa-catalog-1920.png" alt="изображение кресла велюрового">
+                    </picture>
+                    </div>
+                    <div class="catalog__card-content">
+                      <h3 class="catalog__card-title card-main__title">
+                        Диван тканевый <br> &rdquo;D&#8209;31&ldquo;
+                      </h3>
+                      <div class="catalog__card-prices card-main__price">
+                        <span class="catalog__card-price">
+                          28&nbsp;490
+                        </span>
+                      </div>
+                      <button class="catalog__card-btn card-main__btn second-button">
+                        Купить
+                      </button>
+                    </div>
+                    
+                    <div class="catalog__nameplate card-main__nameplate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
+                        </svg>
+  
+                      <p class="catalog__nameplate-text">
+                        4,8
                       </p>
                     </div>
-                  </div>
-                  <button class="catalog__card-btn card-main__btn second-button">
-                    Купить
-                  </button>
-                  <div class="catalog__nameplate card-main__nameplate">
-                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
-                      </svg>
-
-                    <p class="catalog__nameplate-text">
-                      4,8
-                    </p>
-                  </div>
-                </div>
-                <div class="catalog__card  card-main catalog__card-4">
-                  <div class="catalog__card-top-panel">
-                  <picture class="catalog__card-pic">
-                    <source media="(max-width: 320px)" srcset="@img/velor-sofa-390.png">
-                    <source media="(max-width: 768px)" srcset="@img/velor-sofa-768.png">
-                    <img class="catalog__img" src="@img/velor-sofa-1920.png" alt="изображение кресла велюрового">
-                  </picture>
-                  </div>
-                  <div class="catalog__card-content">
-                    <h3 class="catalog__card-title card-main__title">
-                      Диван велюровый &rdquo;Y&#8209;68&ldquo;
-                    </h3>
-                    <div class="catalog__card-prices card-main__price">
-                      <p class="catalog__card-price">
-                        22&nbsp;990
+                  </article>
+                </li>
+                <li class="catalog__item catalog__item-4">
+                  <article class="catalog__card  card-main catalog__card-4">
+                    <div class="catalog__card-top-panel">
+                    <picture class="catalog__card-pic">
+                      <source media="(max-width: 320px)" srcset="@img/velor-sofa-390.png">
+                      <source media="(max-width: 768px)" srcset="@img/velor-sofa-768.png">
+                      <img class="catalog__img" src="@img/velor-sofa-1920.png" alt="изображение кресла велюрового">
+                    </picture>
+                    </div>
+                    <div class="catalog__card-content">
+                      <h3 class="catalog__card-title card-main__title">
+                        Диван велюровый &rdquo;Y&#8209;68&ldquo;
+                      </h3>
+                      <div class="catalog__card-prices card-main__price">
+                        <span class="catalog__card-price">
+                          22&nbsp;990
+                        </span>
+                      </div>
+                      <button class="catalog__card-btn card-main__btn second-button">
+                        Купить
+                      </button>
+                    </div>
+                    
+                    <div class="catalog__nameplate card-main__nameplate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
+                        </svg>
+  
+                      <p class="catalog__nameplate-text">
+                        4,8
                       </p>
                     </div>
-                  </div>
-                  <button class="catalog__card-btn card-main__btn second-button">
-                    Купить
-                  </button>
-                  <div class="catalog__nameplate card-main__nameplate">
-                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
-                      </svg>
-
-                    <p class="catalog__nameplate-text">
-                      4,8
-                    </p>
-                  </div>
-                </div>
-                <div class="catalog__card  card-main catalog__card-5">
-                  <div class="catalog__card-top-panel">
-                  <picture class="catalog__card-pic">
-                    <source media="(max-width: 320px)" srcset="@img/shinil-sofa-390.png">
-                    <source media="(max-width: 768px)" srcset="@img/shinil-sofa-768.png">
-                    <img class="catalog__img" src="@img/shinil-sofa-1920.png" alt="изображение кресла велюрового">
-                  </picture>
-                  </div>
-                  <div class="catalog__card-content">
-                    <h3 class="catalog__card-title card-main__title">
-                      Диван из&nbsp;шинила &rdquo;W&#8209;95&ldquo;
-                    </h3>
-                    <div class="catalog__card-prices card-main__price">
-                      <p class="catalog__card-price">
-                        22&nbsp;990
+                  </article>
+                </li>
+                <li class="catalog__item catalog__item-5">
+                  <article class="catalog__card  card-main catalog__card-5">
+                    <div class="catalog__card-top-panel">
+                    <picture class="catalog__card-pic">
+                      <source media="(max-width: 320px)" srcset="@img/shinil-sofa-390.png">
+                      <source media="(max-width: 768px)" srcset="@img/shinil-sofa-768.png">
+                      <img class="catalog__img" src="@img/shinil-sofa-1920.png" alt="изображение кресла велюрового">
+                    </picture>
+                    </div>
+                    <div class="catalog__card-content">
+                      <h3 class="catalog__card-title card-main__title">
+                        Диван из&nbsp;шинила &rdquo;W&#8209;95&ldquo;
+                      </h3>
+                      <div class="catalog__card-prices card-main__price">
+                        <span class="catalog__card-price">
+                          22&nbsp;990
+                        </span>
+                      </div>
+                      <button class="catalog__card-btn card-main__btn second-button">
+                        Купить
+                      </button>
+                    </div>
+                   
+                    <div class="catalog__nameplate card-main__nameplate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
+                        </svg>
+  
+                      <p class="catalog__nameplate-text">
+                        4,8
                       </p>
                     </div>
-                  </div>
-                  <button class="catalog__card-btn card-main__btn second-button">
-                    Купить
-                  </button>
-                  <div class="catalog__nameplate card-main__nameplate">
-                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
-                      </svg>
-
-                    <p class="catalog__nameplate-text">
-                      4,8
-                    </p>
-                  </div>
-                </div>
-                <div class="catalog__card  card-main catalog__card-6">
-                  <div class="catalog__card-top-panel">
-                  <picture class="catalog__card-pic">
-                    <source media="(max-width: 320px)" srcset="@img/sofa-flock-390.png">
-                    <source media="(max-width: 768px)" srcset="@img/sofa-flock-768.png">
-                    <img class="catalog__img" src="@img/sofa-flock-1920.png" alt="изображение кресла велюрового">
-                  </picture>
-                  </div>
-                  <div class="catalog__card-content">
-                    <h3 class="catalog__card-title card-main__title">
-                      Диван флоковый &rdquo;G&#8209;41&ldquo;
-                    </h3>
-                    <div class="catalog__card-prices card-main__price">
-                      <p class="catalog__card-price">
-                        17&nbsp;990
+                  </article>
+                </li>
+                <li class="catalog__item catalog__item-6">
+                  <article class="catalog__card  card-main catalog__card-6">
+                    <div class="catalog__card-top-panel">
+                    <picture class="catalog__card-pic">
+                      <source media="(max-width: 320px)" srcset="@img/sofa-flock-390.png">
+                      <source media="(max-width: 768px)" srcset="@img/sofa-flock-768.png">
+                      <img class="catalog__img" src="@img/sofa-flock-1920.png" alt="изображение кресла велюрового">
+                    </picture>
+                    </div>
+                    <div class="catalog__card-content">
+                      <h3 class="catalog__card-title card-main__title">
+                        Диван флоковый &rdquo;G&#8209;41&ldquo;
+                      </h3>
+                      <div class="catalog__card-prices card-main__price">
+                        <span class="catalog__card-price">
+                          17&nbsp;990
+                        </span>
+                      </div>
+                      <button class="catalog__card-btn card-main__btn second-button">
+                        Купить
+                      </button>
+                    </div>
+                    
+                    <div class="catalog__nameplate card-main__nameplate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
+                        </svg>
+  
+                      <p class="catalog__nameplate-text">
+                        4,8
                       </p>
                     </div>
-                  </div>
-                  <button class="catalog__card-btn card-main__btn second-button">
-                    Купить
-                  </button>
-                  <div class="catalog__nameplate card-main__nameplate">
-                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
-                      </svg>
-
-                    <p class="catalog__nameplate-text">
-                      4,8
-                    </p>
-                  </div>
-                </div>
-                <div class="catalog__card  card-main catalog__card-7">
-                  <div class="catalog__card-top-panel">
-                  <picture class="catalog__card-pic">
-                    <img class="catalog__img" src="@img/shinil-sofa-v43-1920.png" alt="изображение кресла велюрового">
-                  </picture>
-                  </div>
-                  <div class="catalog__card-content">
-                    <h3 class="catalog__card-title card-main__title">
-                      Диван шиниловый &rdquo;V&#8209;43&ldquo;
-                    </h3>
-                    <div class="catalog__card-prices card-main__price">
-                      <p class="catalog__card-price">
-                        19&nbsp;990
+                  </article>
+                </li>
+                <li class="catalog__item catalog__item-7">
+                  <article class="catalog__card  card-main catalog__card-7">
+                    <div class="catalog__card-top-panel">
+                    <picture class="catalog__card-pic">
+                      <img class="catalog__img" src="@img/shinil-sofa-v43-1920.png" alt="изображение кресла велюрового">
+                    </picture>
+                    </div>
+                    <div class="catalog__card-content">
+                      <h3 class="catalog__card-title card-main__title">
+                        Диван шиниловый &rdquo;V&#8209;43&ldquo;
+                      </h3>
+                      <div class="catalog__card-prices card-main__price">
+                        <span class="catalog__card-price">
+                          19&nbsp;990
+                        </span>
+                      </div>
+                      <button class="catalog__card-btn card-main__btn second-button">
+                        Купить
+                      </button>
+                    </div>
+                    
+                    <div class="catalog__nameplate card-main__nameplate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
+                        </svg>
+  
+                      <p class="catalog__nameplate-text">
+                        4,8
                       </p>
                     </div>
-                  </div>
-                  <button class="catalog__card-btn card-main__btn second-button">
-                    Купить
-                  </button>
-                  <div class="catalog__nameplate card-main__nameplate">
-                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
-                      </svg>
-
-                    <p class="catalog__nameplate-text">
-                      4,8
-                    </p>
-                  </div>
-                </div>
-                <div class="catalog__card  card-main catalog__card-8">
-                  <div class="catalog__card-top-panel">
-                  <picture class="catalog__card-pic">
-                    <img class="catalog__img" src="@img/velor-sofa-s99-1920.png" alt="изображение кресла велюрового">
-                  </picture>
-                  </div>
-                  <div class="catalog__card-content">
-                    <h3 class="catalog__card-title card-main__title">
-                      Диван велюровый &rdquo;S&#8209;99&ldquo;
-                    </h3>
-                    <div class="catalog__card-prices card-main__price">
-                      <p class="catalog__card-price">
-                        19&nbsp;990
+                  </article>
+                </li>
+                <li class="catalog__item catalog__item-8">
+                  <article class="catalog__card  card-main catalog__card-8">
+                    <div class="catalog__card-top-panel">
+                    <picture class="catalog__card-pic">
+                      <img class="catalog__img" src="@img/velor-sofa-s99-1920.png" alt="изображение кресла велюрового">
+                    </picture>
+                    </div>
+                    <div class="catalog__card-content">
+                      <h3 class="catalog__card-title card-main__title">
+                        Диван велюровый &rdquo;S&#8209;99&ldquo;
+                      </h3>
+                      <div class="catalog__card-prices card-main__price">
+                        <span class="catalog__card-price">
+                          19&nbsp;990
+                        </span>
+                      </div>
+                      <button class="catalog__card-btn card-main__btn second-button">
+                        Купить
+                      </button>
+                    </div>
+                    
+                    <div class="catalog__nameplate card-main__nameplate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
+                        </svg>
+  
+                      <p class="catalog__nameplate-text">
+                        4,7
                       </p>
                     </div>
-                  </div>
-                  <button class="catalog__card-btn card-main__btn second-button">
-                    Купить
-                  </button>
-                  <div class="catalog__nameplate card-main__nameplate">
-                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
-                      </svg>
-
-                    <p class="catalog__nameplate-text">
-                      4,7
-                    </p>
-                  </div>
-                </div>
-                <div class="catalog__card  card-main catalog__card-9">
-                  <div class="catalog__card-top-panel">
-                  <picture class="catalog__card-pic">
-                    <img class="catalog__img" src="@img/grin-sofa.png" alt="изображение кресла велюрового">
-                  </picture>
-                  </div>
-                  <div class="catalog__card-content">
-                    <h3 class="catalog__card-title card-main__title">
-                      Диван из кожзама &rdquo;F&#8209;85&ldquo;
-                    </h3>
-                    <div class="catalog__card-prices card-main__price">
-                      <p class="catalog__card-price">
-                        26&nbsp;990
+                  </article>
+                </li>
+                <li class="catalog__item catalog__item-9">
+                  <article class="catalog__card  card-main catalog__card-9">
+                    <div class="catalog__card-top-panel">
+                    <picture class="catalog__card-pic">
+                      <img class="catalog__img" src="@img/grin-sofa.png" alt="изображение кресла велюрового">
+                    </picture>
+                    </div>
+                    <div class="catalog__card-content">
+                      <h3 class="catalog__card-title card-main__title">
+                        Диван из кожзама &rdquo;F&#8209;85&ldquo;
+                      </h3>
+                      <div class="catalog__card-prices card-main__price">
+                        <span class="catalog__card-price">
+                          26&nbsp;990
+                        </span>
+                      </div>
+                      <button class="catalog__card-btn card-main__btn second-button">
+                        Купить
+                      </button>
+                    </div>
+                   
+                    <div class="catalog__nameplate card-main__nameplate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
+                        </svg>
+  
+                      <p class="catalog__nameplate-text">
+                        4,7
                       </p>
                     </div>
-                  </div>
-                  <button class="catalog__card-btn card-main__btn second-button">
-                    Купить
-                  </button>
-                  <div class="catalog__nameplate card-main__nameplate">
-                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
-                      </svg>
-
-                    <p class="catalog__nameplate-text">
-                      4,7
-                    </p>
-                  </div>
-                </div>
-              </div>
-             </div>
+                  </article>
+                </li>
+              </ul>
             </div>
             <div class="swiper-slide catalog__swiper-slide">
               Slide 2
@@ -585,9 +609,9 @@
   <footer class="footer">
     <div class="footer__bg">
       <div class="container footer__container footer__catalog-container grid">
-        <div class="footer__left-panel">
+        <div class="footer__left-panel footer__catalog-left-panel">
           <a class="footer__logo-link" href="#" title="Переход на главную страницу компании СидДаунПлиз">
-            <img src="@img/logo-1920.png" alt="Изображение логотипа компании СидДаунПлиз">
+            <img class="footer__img" src="@img/logo-1920.png" alt="Изображение логотипа компании СидДаунПлиз">
           </a>
           <div class="footer__social-link-container">
             <a href="#" class="footer__social-link odnoklassniki">

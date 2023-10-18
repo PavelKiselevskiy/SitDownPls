@@ -2,6 +2,23 @@
 
 
 @media (max-width: 1300px) {
+
+  
+  .rating {
+    &__card-area {
+      grid-template-columns: repeat(3, 4fr);
+    }
+
+    &__card-2 {
+      max-width: 100%;
+    }
+    
+    
+    &__card-7, &__card-8 {
+      display: none
+    }
+  }
+  
   .footer {
     &__right-panel {
       gap: calc(48px + (92 - 48) * ((100vw - 1024px) / (1300 - 1024)));
@@ -49,6 +66,9 @@
       grid-row: 3;
       justify-self: start;
       padding-top: 0;
+    }
+
+    &__main-nav-list {
       padding-left: 40px;
     }
 
@@ -56,6 +76,11 @@
       margin-right: calc(32px + (41 - 32) * (100vw - 768px) / (1024 - 768));
     }
 
+    &__main-nav-item:last-child {
+      margin-right: 0;
+      padding-left: 1px;
+
+    }
     &__form-container {
       grid-column: 1 / 8;
       grid-row: 4;
@@ -82,10 +107,14 @@
 }
 
   .hero {
-    background-image: url('@img/main-bannr-1024.png');
+    background-image: url('../images/main-bannr-1024.png');
+    &__title {
+      padding-top: 0;
+    }
   }
 
   .offers {
+    margin-bottom: 67px;
       &__card-area {
         grid-template-columns: repeat(3, 3fr);
       }
@@ -94,12 +123,46 @@
         margin-bottom: 10px;
       }
 
+      &__card-2 {
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+
+      &__card-2 &__img {
+        padding: 0;
+      }
+
+      &__card-2 &__card-content {
+        padding-left: 9px;
+      }
+
       &__card-2 &__card-pic {
-        margin-bottom: auto;
+        margin-bottom: 42px;
       }
 
       &__card-title {
-        margin-bottom: 20px;
+        margin-bottom: 23px;
+      }
+
+      &__card-2 &__card-title {
+        padding-top: 2px;
+        margin-bottom: 21px;
+    }
+
+      &__card-2 &__card-promotional-price {
+        margin-right: 67px;
+      }
+
+      &__card-2 &__card-btn {
+        padding-bottom: 17px;
+      }
+
+      &__card-2 &__nameplate {
+        padding-right: 21px;
+      }
+
+      &__card-2 &__nameplate-text {
+        padding-left: 18px;
       }
 
       &__nameplate {
@@ -109,6 +172,15 @@
       &__nameplate-text {
         min-width: 54px;
         padding-left: 20px;
+      }
+
+      &__item:nth-child(3n) {
+        width: 296px;
+        justify-self: flex-end;
+      }
+
+      &__card-3 &__nameplate{
+        padding-right: 14px;
       }
 
   }
@@ -121,8 +193,25 @@
   }
 
   .rating {
+    margin-bottom: 40px;
       &__card-area {
         grid-template-columns: repeat(3, 3fr);
+      }
+
+      &__card-3 &__card-content {
+        padding-left: 19px;
+      }
+
+      &__card-3 &__nameplate {
+        left: 35px;
+      }
+
+      &__card-6 &__card-content {
+        padding-left: 19px;
+      }
+
+      &__card-6 &__nameplate {
+        left: 35px;
       }
 
       &__card-7, &__card-8 {
@@ -131,11 +220,19 @@
   }
 
   .banner {
-    background-image: url('@img/banner-oxford-1024.png');
+    background-image: url('../images/banner-oxford-1024.png');
+
+    &__descr {
+      margin-bottom: 47px;
+    }
   }
 
   .categories {
-    margin-bottom: 72px;
+    margin-bottom: 69px;
+    &__title {
+      margin-bottom: 24px;
+    }
+
     &__card-area {
       grid-template-areas:
       "c-card-1 c-card-1 c-card-1 c-card-1 c-card-1 c-card-1 c-card-3 c-card-3 c-card-3"
@@ -148,49 +245,70 @@
       margin-bottom: 40px;
     }
 
+    &__card-list {
+      margin-bottom: 15px;
+    }
+
     &__card-img {
       margin-bottom: 0;
     }
 
     &__card-pic {
-      margin-bottom: auto;
+      margin-bottom: 25px;
+    }
+
+
+    &__card-1 &__card-title {
+      margin-bottom: 34px;
+    }
+
+    &__card-3 &__card-pic {
+      margin-bottom: 31px;
+    }
+
+    &__card-2 &__card-pic,  &__card-4 &__card-pic,  &__card-5 &__card-pic {
+      margin-bottom: 31px;
     }
 
   }
 
   .useful {
-
+    margin-bottom: 97px;
     &__title {
       margin-bottom: 24px;
     }
 
     &__card-area {
       grid-template-columns: 3fr 3fr 3fr;
-      grid-template-rows: minmax(456px, auto);
+      grid-template-rows: minmax(426px, auto);
     }
+
 
     &__card-descr {
       max-width: 236px;
       font-size: 16px;
     }
-    &__card-3 {
+    &__item-card-3 {
       display: flex;
     }
   }
 
   .feedback {
-
+    margin-bottom: 71px;
     &__container {
       grid-template-columns: 4fr 5fr;
     }
 
     &__descr {
       max-width: 405px;
-      margin-bottom: 13px;
+      margin-bottom: 15px;
     }
 
     &__right-panel {
       padding-top: 81px;
+    }
+    &__right-panel-img {
+      max-width: 100%;
     }
 
   }
@@ -198,6 +316,7 @@
   .footer {
     &__container {
       padding: 24px 36px;
+      padding-bottom: 20px;
     }
 
     &__left-panel {
@@ -208,6 +327,7 @@
       grid-column: 3 / -1;
       justify-self: start;
       padding-left: 8px;
+      padding-top: 2px;
       gap: calc(39px + (75 - 39) * (100vw - 768px) / (1024 - 768));
     }
 
@@ -218,6 +338,15 @@
 
     &__catalog-container {
       padding-bottom: 10px;
+    }
+
+    &__copy-link {
+      font-size: 15px;
+    }
+    
+    &__catalog-right-panel {
+      padding-left: 7px;
+      padding-top: 0;
     }
 
   }
@@ -233,7 +362,7 @@
 
   .catalog-cont {
     grid-template-columns: repeat(12, 1fr);
-    margin-bottom: 59px;
+    margin-bottom: 54px;
   }
 
   .catalog {
@@ -246,8 +375,13 @@
 
     &__card-top-panel {
       min-height: 165px;
-      margin-bottom: 14px;
+      margin-bottom: 13px;
     }
+
+  }
+
+  .checkbox-label:not(:last-child) {
+    margin-bottom: 10.5px;
   }
 
   .filter-block {
@@ -261,7 +395,7 @@
     }
 
     &__panel-title {
-      margin-bottom: 8px;
+        margin-bottom: 8px;
     }
 
     &__price-panel {
@@ -277,7 +411,7 @@
     }
 
     &__price-title {
-      margin-bottom: 5px;
+      margin-bottom: 6px;
     }
 
   }
@@ -311,11 +445,12 @@
     }
 
     &__characteristics-list {
-      min-width: 46.5%;
+      min-width: 100%;
     }
 
     &__construction-descr {
-      margin-bottom: 78px;
+      margin-bottom: 81px;
+      line-height: 191%;
     }
   }
 
@@ -508,7 +643,7 @@
     &__logo {
       width: 187px;
       height: 27px;
-      padding-top: 8px;
+      padding-top: 0;
     }
 
     &__main-nav-link {
@@ -539,11 +674,16 @@
     }
 
     &__personal {
-      padding-top: 5px;
+      padding-top: 1px;
     }
 
     &__personal-area {
-      margin-right: 25px;
+      margin-right: 29px;
+    }
+
+    &__main-nav-list {
+      padding-left: 0;
+      padding-top: 3px;
     }
 
     &__form {
@@ -577,7 +717,8 @@
 }
 
   .hero {
-    background-image: url('@img/main-banner-768.png');
+    margin-bottom: 68px;
+    background-image: url('../images/main-banner-768.png');
   }
 
   .big-card {
@@ -590,15 +731,11 @@
   }
 
   .big-card .offers__card-title {
-    margin-bottom: 24px;
+    margin-bottom: 18px;
   }
 
   .big-card .offers__nameplate-text {
-    padding-left: 17px;
-  }
-
-  .big-card .offers__card-btn {
-    margin-left: 9px;
+    padding-left: 16px;
   }
 
   .card-main {
@@ -607,44 +744,111 @@
     }
   }
 
-  .rating {
-    &__card-btn {
-      padding: 16px 35px;
+  .offers {
+    margin-bottom: 68px;
+
+    &__title {
+      margin-bottom: 23px;
+    } 
+
+    &__nameplate {
+      top: 30px;
+    }
+
+    &__item:nth-child(2n) {
+      max-width: 299px;
+      justify-self: flex-end;
+    } 
+    &__card-2 &__card-price {
+      margin-bottom: 22px;
+      padding-top: 3px;
+    }
+
+    &__card-price {
+      flex-wrap: wrap;
+    }
+
+    &__img {
+      max-width: 100%;
+    }
+
+    &__item:nth-child(3n) {
+      display: none;
     }
   }
 
+  .rating {
+    margin-bottom: 38px;
+    &__card-btn {
+      padding: 16px 32px;
+    }
+
+    &__img {
+      max-width: 100%;
+    }
+
+    &__card-top-panel {
+      margin-bottom: 13px;
+    }
+
+    &__card-3 &__nameplate {
+      left: 32px;
+    }
+
+    &__card-3 &__card-content {
+      padding-left: 15px;
+    }
+
+    &__card-6 &__nameplate {
+      left: 32px;
+    }
+    &__card-6 &__card-content {
+      padding-left: 16px;
+    }
+
+    
+    &__card-4 &__nameplate {
+      left: 32px;
+    }
+
+  }
+
   .banner {
-    background-image: url('@img/banner-oxford-768.png');
+    background-image: url('../images/banner-oxford-768.png');
 
     &__container {
       padding-left: 36px;
     }
 
     &__title {
-      padding-top: 6px;
+      padding-top: 4px;
+    }
+
+    &__descr {
+      margin-bottom: 49px;
     }
   }
 
   .categories {
-    margin-bottom: 70px;
+    margin-bottom: 68px;
     &__card-area {
       grid-template-areas:
     "c-card-1 c-card-1 c-card-1 c-card-1 c-card-1 c-card-1"
     "c-card-3 c-card-3 c-card-3 c-card-2 c-card-2 c-card-2"
     "c-card-4 c-card-4 c-card-4 c-card-5 c-card-5 c-card-5";
-    gap: 32px;
+    gap: 31px;
     }
 
     &__card-list {
       flex-wrap: wrap;
-      gap: 15px;
+      gap: 31px;
     }
   }
 
   .useful {
-    margin-bottom: 68px;
+    margin-bottom: 96px;
     &__title {
-      margin-bottom: 22px;
+      margin-bottom: 24px;
     }
 
     &__card-img {
@@ -654,12 +858,16 @@
     &__card-descr {
       max-width: 236px;
     }
+
+    &__item-card-3 {
+      display: none;
+    }
   }
 
   .feedback {
-
+    margin-bottom: 69px;
     &__container {
-      gap: 32px;
+      gap: 18px;
     }
     &__title {
       margin-bottom: 7px;
@@ -670,13 +878,35 @@
     }
 
     &__right-panel-pic {
-      padding-left: 0;
+      padding-left: 14px;
+      padding-top: 3px;
+    }
+
+    &__right-panel-img {
+      margin: 0;
+      padding-top: 13px;
+      max-width: 189px;
+    }
+
+    &__descr {
+      margin-bottom: 16px;
     }
   }
 
   .footer {
+
+    &__container {
+      padding-top: 26px;
+      padding-bottom: 21px;
+    }
+
     &__left-panel {
       grid-template-columns: repeat(6, 1fr);
+      margin-bottom: 21px;
+    }
+
+    &__card-left-panel {
+      margin-bottom: 21px;
     }
 
     &__social-link-container {
@@ -692,12 +922,22 @@
       padding-top: 0px;
       padding-left: 0;
     }
+
+    &__right-panel-list__title {
+      margin: 0;
+      margin-bottom: 2px;
+    }
   }
 
   .catalog {
 
     &__card-area {
+      display: grid;
       grid-template-columns: repeat(2, 3fr);
+    }
+
+    &__card {
+      display: flex;
     }
 
     &__card-4 {
@@ -706,13 +946,54 @@
     }
 
     &__card-top-panel {
-      margin-bottom: 12px;
+      margin-bottom: 11px;
     }
 
     &__card-7, &__card-8, &__card-9 {
       display: none;
     }
+
+    &__item {
+      order: 1;
+    }
+
+    &__item-1 {
+      order: -1;
+    }
+    &__item-2 {
+      order: 1;
+    }
+    &__item-3 {
+      order: 3;
+    }
+    &__item-4 {
+      order: 2;
+    }
+    &__item-5 {
+      order: 4;
+    }
+    &__item-6 {
+      order: 5;
+    }
+    &__item-7 {
+      display: none;
+      order: 6;
+    }
+    &__item-8 {
+      display: none;
+      order: 7;
+    }
+    &__item-9 {
+      display: none;
+      order: 8;
+    }
+
+
   }
+  .catalog-cont {
+    margin-bottom: 54px;
+  }
+
 
   .filter-block {
     &__area {
@@ -762,7 +1043,7 @@
     }
 
     &__characteristics-list {
-      min-width: 65.4%;
+      min-width: 100%;
     }
   }
 
@@ -771,9 +1052,21 @@
       grid-template-columns: repeat(2, 3fr);
     }
 
+    &__card-prices  {
+      margin-bottom: 24px;
+    }
+
     &__card-3 {
       display: none;
     }
+  }
+
+  .checkbox-label:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .checkbox-label:nth-child(2n) {
+    padding-top: 4px;
   }
 
 }
@@ -882,6 +1175,15 @@
       grid-template-columns: repeat(1, 1fr);
       row-gap: 24px;
     }
+
+    &__card {
+      max-width: 100%;
+    }
+
+    &__item:nth-child(2n) {
+      max-width: 100%;
+      justify-self:inherit;
+    }
   }
 
   .rating {
@@ -896,7 +1198,6 @@
 
 
     &__card-btn {
-      margin-left: 0;
       padding: 19px 23px;
       font-size: 16px;
     }
@@ -939,21 +1240,21 @@
   .useful {
     &__card-area {
       grid-template-columns: repeat(1, minmax(296px, 296px));
+      grid-template-rows: minmax(458px, auto);
       justify-content: center;
     }
 
     &__card {
       align-items: center;
       max-width: 320px;
-      min-height: 456px;
+      min-height: 420px;
+      height: auto;
     }
 
     &__card picture {
       display: flex;
       justify-content: center;
     }
-
-
 
     &__card-btn {
       align-self: flex-start;
@@ -1043,6 +1344,7 @@
 
     &__main-btn {
       align-self: center;
+      font-weight: 600;
     }
 
     &__link {
@@ -1061,10 +1363,6 @@
       margin-bottom: 8px;
     }
 
-    &__card-content {
-      margin-left: 0;
-    }
-
     &__card-btn {
       margin: 0;
       align-self: center;
@@ -1075,12 +1373,12 @@
 
 @media (max-width: 390px) {
   .big-card__content {
-    padding-top: 44px;
+    padding-top: 0;
   }
 
   .header {
     &__logo {
-      padding-top: 0;
+      padding-top: 1px;
     }
 
     &__phone-container {
@@ -1096,7 +1394,7 @@
     }
 
     &__main-nav-link {
-      padding-top: 18px;
+      padding-top: 15px;
     }
 
     &__main-nav-item:not(:last-child) {
@@ -1133,13 +1431,12 @@
   }
 
   .hero {
-    background-image: url('/img/main-banner-390.png');
+    background-image: url('../images/main-banner-390.png');
     margin-bottom: 38px;
 
     &__title {
+      padding-left: 18px;
       max-width: 220px;
-      margin-left: 19px;
-      letter-spacing: .7px;
     }
 
     &__container {
@@ -1150,6 +1447,10 @@
   .offers {
     margin-bottom: 68px;
 
+    &__card-area {
+      grid-template-rows: minmax(400px, auto);
+    }
+
     &__title {
       line-height: 25px;
       margin-bottom: 26px;
@@ -1159,20 +1460,66 @@
       margin-bottom: 13px;
     }
 
+    &__card-price {
+      margin-bottom: 20px;
+    }
+
     &__card-title {
       margin-bottom: 22px;
     }
 
     &__card-btn {
-      padding: 16.5px 35px;
+      padding: 16px 32px;
+    }
+
+    &__card-2 &__nameplate-text {
+      padding-left: 14px;
+    }
+
+    &__card-2 &__nameplate {
+      top: 29px;
     }
 
     &__card-3, &__card-4, &__card-5, &__card-6 {
       display: flex;
     }
 
+    &__card-3 {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    &__item:nth-child(3n) {
+      display: flex;
+      max-width: 100%;
+      width: 100%;
+      justify-self: center;
+    }
+
     &__card-4 &__card-pic {
       padding-top: 42px;
+    }
+
+    &__card-4 &__nameplate {
+      top: 30px;
+      padding-left: 3px;
+    }
+
+    &__card-4 &__img {
+      padding-left: 0;
+    }
+
+    &__card-5 &__img {
+      padding-left: 0;
+    }
+
+    &__card-5 &__nameplate {
+      top: 28px;
+      padding-left: 0px;
+    }
+
+    &__card-5 &__nameplate-text {
+      padding-left: 15px;
     }
 
     &__card-5 &__card-pic {
@@ -1184,25 +1531,35 @@
       padding: 30px 16px;
     }
 
-    &__card-5 &__card-btn {
-      margin-left: 14px;
+    &__card-6 {
+      width: 100%;
     }
 
     &__card-6 &__card-pic {
       padding-top: 34px;
+      margin-bottom: 14px;
+    }
+
+    &__card-6 &__img {
+      padding-left: 0;
     }
 
     &__card-6 &__card-price {
       margin-bottom: 21px;
     }
 
+    &__card-6 &__nameplate {
+      top: 31px;
+      padding-right: 12px;
+    }
 
-
-
+    &__card-6 &__nameplate-text {
+      padding-left: 25px;
+    }
   }
 
   .rating {
-
+    margin-bottom: 55px;
     &__title {
       margin-bottom: 24px;
     }
@@ -1225,13 +1582,12 @@
     }
 
     &__card-btn {
-      margin-left: 10px;
-      padding: 9.4px 24px;
+      padding: 9px 22px;
     }
 
     &__nameplate {
       left: 15px;
-      top: 15px;
+      top: 17px;
     }
 
     &__nameplate-text {
@@ -1244,6 +1600,7 @@
 
     &__card-top-panel {
       min-height: 74px;
+      margin-bottom: 16px;
     }
 
     &__card-2 &__card-top-panel {
@@ -1251,7 +1608,7 @@
     }
 
     &__card-3 {
-      padding-bottom: 9px;
+      padding-bottom: 18px;
 
     }
 
@@ -1262,6 +1619,13 @@
 
     &__card-3 &__card-content {
       margin-bottom: 0px;
+      padding-left: 9px;
+    }
+
+
+
+    &__card-3 &__nameplate {
+      left: 13px;
     }
 
     &__card-4 &__card-top-panel {
@@ -1283,15 +1647,34 @@
       margin-bottom:11px;
     }
 
+    &__card-6 &__card-top-panel {
+      min-height: 77px;
+      margin-bottom: 13px;
+    }
+
+    &__card-6 &__card-content {
+      margin-bottom: 0px;
+      padding-left: 9px;
+    }
+
+    &__card-6 &__nameplate {
+      left: 13px;
+    }
+
+
   }
 
   .banner {
     padding-top: 26px;
-    background-image: url('/img/banner-oxford-390.png');
+    background-image: url('../images/banner-oxford-390.png');
     margin-bottom: 14px;
 
     &__container {
       min-height: 276px;
+    }
+
+    &__title {
+      padding-top: 6px;
     }
 
     &__descr {
@@ -1301,7 +1684,7 @@
   }
 
   .categories {
-    margin-bottom: 67px;
+    margin-bottom: 65px;
 
     &__title {
       margin-bottom: 24px;
@@ -1327,20 +1710,21 @@
     }
 
     &__card-link-mob {
+      @include reset-style;
       display: flex;
       align-items: center;
       margin-bottom: 16px;
     }
 
     &__card-link-mob svg {
-      margin-left: 5px;
+      padding-left: 5px;
       padding-top: 5px;
       width: 22px;
       height: 22px;
     }
 
     .categories__card-link-mob svg {
-      margin-left: 6px;
+      padding-left: 6px;
       padding-top: 2px;
       width: 22px;
       height: 22px;
@@ -1351,10 +1735,11 @@
       row-gap: 32px;
     }
 
-    &__card:first-child {
-      padding-top: 27px;
-      padding-bottom: 12px;
+    &__card-pic {
+      margin-bottom: 0;
     }
+
+    
     &__card {
       padding-top: 10px;
     }
@@ -1393,6 +1778,23 @@
       display: none;
     }
 
+    &__card-1 {
+      padding-top: 27px;
+      padding-bottom: 12px;
+    }
+
+    &__card-1 &__card-title {
+      margin-bottom: 0; 
+    }
+
+    &__card-3 &__card-pic {
+     margin-bottom: 0;
+    }
+
+    &__card-2 &__card-pic {
+      margin-bottom: 0;
+     }
+
     &__card-4 &__card-list {
       margin-bottom: 9px;
       column-gap: 56px;
@@ -1404,6 +1806,20 @@
 
     &__card-4 &__card-link-mob svg {
       padding-top: 18px;
+    }
+
+    &__card-2 &__card-pic, &__card-4 &__card-pic, &__card-5 &__card-pic {
+       margin-bottom: 0;
+    }
+
+    &__card-5 &__card-list {
+      column-gap: 43px;
+      padding-left: 16px;
+      margin-bottom: 10px;
+    }
+
+    &__card-5 &__card-title {
+      padding-left: 16px;
     }
 
   }
@@ -1418,19 +1834,40 @@
       row-gap: 23px;
     }
 
+    &__item-card {
+      min-height: 394px;
+    }
     &__card {
-      min-height: 426px;
+      min-height: 300px;
     }
 
     &__card-img {
       margin-bottom: 30px;
     }
 
-    &__card-descr {
-      padding-left: 11px;
+    &__card-content {
+      padding-left: 10px;
     }
 
-    &__card-3, &__card-4, &__card-5 {
+    &__card-descr {
+      margin-bottom: 30px;
+    }
+
+    &__card-2 &__card-descr {
+      margin-bottom: 51px;
+    }
+
+    &__card-3 {
+      display: flex;
+    }
+
+    &__item-card-3 &__card-descr, &__item-card-5 &__card-descr {
+      margin-bottom: 51px;
+    }
+
+  
+
+    &__item-card-3, &__item-card-4, &__item-card-5 {
       display: flex;
     }
 
@@ -1440,13 +1877,21 @@
     &__form-lab {
       font-size: 12px;
     }
+
+    &__form-btn {
+      margin-bottom: 12px;
+    } 
   }
 
   .footer {
 
+    &__bg {
+      padding-bottom: 22px;
+    }
+
     &__left-panel {
       row-gap: 21px;
-      margin-bottom: 21px;
+      margin-bottom: 24px;
     }
     &__social-link-container {
       padding-left: 1px;
@@ -1461,16 +1906,29 @@
     }
 
     &__catalog-container {
-      padding-bottom: 22px;
+      padding-bottom: 0;
+    }
+
+    &__card-left-panel {
+      margin-bottom: 23px;
+    }
+
+    &__catalog-left-panel {
+      margin-bottom: 22px;
     }
 
   }
 
   .filter-block {
-    margin-bottom: 31px;
+    margin-bottom: 30px;
     &__area {
       column-gap: 30px;
       row-gap: 18px;
+    }
+
+    &__price-title {
+      margin-bottom: 5px;
+      margin-top: 0px;
     }
 
     &__price-panel {
@@ -1497,7 +1955,7 @@
     }
 
     &__nameplate {
-      top: 13px;
+      top: 19px;
       left: 17px;
     }
 
@@ -1515,17 +1973,17 @@
     }
 
     &__card-btn {
-      margin-left: 5px;
-      padding: 9px 24px;
+      padding: 9px 22px;
     }
 
     &__card-top-panel {
       min-height: 80px;
-      margin-bottom: 16px;
+      margin-bottom: 17px;
     }
 
     &__card-3 &__card-top-panel {
       min-height: 82px;
+      margin-bottom: 15px;
     }
     &__card-4 &__card-top-panel {
       min-height: 89px;
@@ -1541,10 +1999,21 @@
       min-height: 84px;
       margin-bottom: 12px;
     }
+
+    &__swiper-pagination {
+      left: 34%;
+    }
+
+    &__item-3 {
+      order: 2;
+    }
+    &__item-4 {
+      order: 3;
+    }
   }
 
   .catalog-cont {
-    margin-bottom: 61px;
+    margin-bottom: 56px;
   }
 
   // карточка товара
@@ -1554,7 +2023,7 @@
   }
 
   .product-card {
-    margin-bottom: 93px;
+    margin-bottom: 74px;
     &__img-container {
       display: flex;
       justify-content: center;
@@ -1583,12 +2052,16 @@
       margin-bottom: 16px;
     }
 
+    &__link {
+      padding-left: 1px;
+    } 
+
     &__main-btn {
       width: 100%;
     }
 
     &__nameplate {
-      top: -3px;
+      top: -1px;
       left: 0;
     }
 
@@ -1614,6 +2087,15 @@
       padding-top: 30px;
     }
 
+    &__characteristics-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__characteristics-item::before {
+      display: none;
+    }
+
     &__characteristics-container {
       font-size: 10px;
     }
@@ -1628,7 +2110,7 @@
     }
 
     &__characteristics-item:not(:last-child) {
-      margin-bottom: 29.4px;
+      margin-bottom: 13.5px;
     }
 
     &__characteristics-list-item-meaning:not(:last-child) {
@@ -1642,12 +2124,13 @@
   }
 
   .similar-products {
+    margin-bottom: 72px;
     &__card-area {
       column-gap: 16px;
     }
 
     &__card-btn {
-      padding: 9px 24px;
+      padding: 9px 22px;
     }
 
     &__card {
@@ -1655,6 +2138,7 @@
       padding-bottom: 14px;
     }
 
+    
     &__card-top-panel {
       min-height: 63px;
     }
@@ -1674,8 +2158,8 @@
     }
 
     &__card-content {
-      margin-left: 4px;
-      margin-bottom: 16px;
+      padding-left: 3px;
+      margin-bottom: 0;
     }
 
     &__card-1 &__card-top-panel {
@@ -1683,11 +2167,23 @@
     }
 
     &__card-title {
-      margin-bottom: 18px;
+      margin-bottom: 11px;
     }
 
     &__card-prices {
-      margin-bottom: 0;
+      margin-bottom: 12px;
+    }
+
+    &__card-2 {
+      padding-top: 46px;
+    }
+
+    &__card-2 &__card-top-panel {
+      min-height: 62px;
+    }
+
+    &__card-2 &__card-title {
+        margin-bottom: 13px;
     }
   }
 
